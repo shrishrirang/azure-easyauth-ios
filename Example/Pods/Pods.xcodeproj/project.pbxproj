@@ -1,0 +1,703 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16FF9A348C18E96AD64B23BC49951DCD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		1F5AE83895DCC38E0A70CA15A4BAA53A /* Pods-AzureEasyAuth_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFA4C68BD2BD26030C884A33E34E671 /* Pods-AzureEasyAuth_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CC1B4FF8A344A814075AC9BABBDD87B /* Pods-AzureEasyAuth_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 593BA96E9A664DBE6B5394DF9426D3C0 /* Pods-AzureEasyAuth_Example-dummy.m */; };
+		57A7A1CFA47FB6347BEBA3A6AFF301B5 /* Pods-AzureEasyAuth_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACA9F832A55FA9C8A02CB6B32C59E10 /* Pods-AzureEasyAuth_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A8B1DADBCEDCE274C0057D7FFCF896D /* AzureEasyAuth-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4047F3F2B090160B9BE8BAF4DBC0EB6A /* AzureEasyAuth-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EAB76E9C3EBFE61A37B936AB82F145F /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 72D88265E3E0D1582B9878479B3A112B /* ReplaceMe.m */; };
+		8BF1B7C1A344AEF7D3F8DF7DE06DAAAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		B1EC2A770DCD114C1E719A75E4C952B3 /* Pods-AzureEasyAuth_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2989C988076CCB5A36CFF645DD9DB7AF /* Pods-AzureEasyAuth_Tests-dummy.m */; };
+		E31798EB2AAEC6579FB5C79F685E57DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		F9C38D45E27ED0113675F6A57EDBC5AE /* AzureEasyAuth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB9D9C6783E663FFC8B7743A7BC969B /* AzureEasyAuth-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		95E357D8D3BAFAFFDCEB8B03AB9658C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD850CEADFAED2C198C70644584B1786;
+			remoteInfo = AzureEasyAuth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		12A35A04D6AE940DE39EE4B48FDFB51E /* Pods-AzureEasyAuth_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AzureEasyAuth_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1D83D41CA82D702EC97914AE7E66D562 /* AzureEasyAuth.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AzureEasyAuth.modulemap; sourceTree = "<group>"; };
+		27CFAD80EE7C3586CD26AE0793CA6C33 /* Pods-AzureEasyAuth_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AzureEasyAuth_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		2989C988076CCB5A36CFF645DD9DB7AF /* Pods-AzureEasyAuth_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AzureEasyAuth_Tests-dummy.m"; sourceTree = "<group>"; };
+		4047F3F2B090160B9BE8BAF4DBC0EB6A /* AzureEasyAuth-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AzureEasyAuth-umbrella.h"; sourceTree = "<group>"; };
+		42E8A0673DEAD98E63DDA8DC4A9ACB7E /* Pods-AzureEasyAuth_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AzureEasyAuth_Tests.modulemap"; sourceTree = "<group>"; };
+		5574B2285E9F1E1774ADAE313F96E576 /* Pods-AzureEasyAuth_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AzureEasyAuth_Example.release.xcconfig"; sourceTree = "<group>"; };
+		593BA96E9A664DBE6B5394DF9426D3C0 /* Pods-AzureEasyAuth_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AzureEasyAuth_Example-dummy.m"; sourceTree = "<group>"; };
+		5AC6CE7432338A617CB67DA93E133B4C /* Pods-AzureEasyAuth_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AzureEasyAuth_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5D8A6FE0EB62EFAAB36367A8E5C1DAF9 /* AzureEasyAuth-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AzureEasyAuth-prefix.pch"; sourceTree = "<group>"; };
+		6BB9D9C6783E663FFC8B7743A7BC969B /* AzureEasyAuth-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AzureEasyAuth-dummy.m"; sourceTree = "<group>"; };
+		6CD7F15FFD021CFC69FCE9DFBCCD769B /* Pods-AzureEasyAuth_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AzureEasyAuth_Example.modulemap"; sourceTree = "<group>"; };
+		72D88265E3E0D1582B9878479B3A112B /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
+		742CC9C947720CD4E6D60C6F4D6F04CB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B10FAB51803B1FD02F7C8115E572BB0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94C34ED1AC51F39A926D5A60D053C6C0 /* Pods-AzureEasyAuth_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AzureEasyAuth_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		9ACA9F832A55FA9C8A02CB6B32C59E10 /* Pods-AzureEasyAuth_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AzureEasyAuth_Tests-umbrella.h"; sourceTree = "<group>"; };
+		AAEEF91BF59A74AC0875B9B1423B2298 /* AzureEasyAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AzureEasyAuth.framework; path = AzureEasyAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC58A02EE3883C553E37E46D66DF1694 /* Pods-AzureEasyAuth_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AzureEasyAuth_Tests-resources.sh"; sourceTree = "<group>"; };
+		B10356AFFEB8640124C3DD328D0C231B /* Pods-AzureEasyAuth_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AzureEasyAuth_Example-frameworks.sh"; sourceTree = "<group>"; };
+		B12F808711446D98E3DC12F5B1C28EF9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7399C698B585EE7C5BDFAE837FC9273 /* Pods-AzureEasyAuth_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AzureEasyAuth_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BDF284BE2C4F6FDED7B1E84CC19CF6A8 /* Pods-AzureEasyAuth_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AzureEasyAuth_Example-resources.sh"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CF72A913D8786D62025EE593505AB75A /* Pods-AzureEasyAuth_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AzureEasyAuth_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		E0A62FBABFAC0BAF791B40633CFA4A2C /* AzureEasyAuth.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AzureEasyAuth.xcconfig; sourceTree = "<group>"; };
+		E0C4CDB9F9763176A3CA03B032C12B62 /* Pods-AzureEasyAuth_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AzureEasyAuth_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		EDB18099A1E30D7F742145EFA141AD63 /* Pods-AzureEasyAuth_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AzureEasyAuth_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F821677045744F664370BF4B7ECEB7D3 /* Pods_AzureEasyAuth_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AzureEasyAuth_Tests.framework; path = "Pods-AzureEasyAuth_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB921166649051C9C1584D05E7DD5FD3 /* Pods_AzureEasyAuth_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AzureEasyAuth_Example.framework; path = "Pods-AzureEasyAuth_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFFA4C68BD2BD26030C884A33E34E671 /* Pods-AzureEasyAuth_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AzureEasyAuth_Example-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		103D4302F04D94C5058E5EE0A6D3BB3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16FF9A348C18E96AD64B23BC49951DCD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BA27E1B41E0B420E2749AE2499E25E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BF1B7C1A344AEF7D3F8DF7DE06DAAAD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629C5528F4C390D27D5CD6EE6BEB8A95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E31798EB2AAEC6579FB5C79F685E57DA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05C2DAB706890AA913C69DBB5F4D7BC4 /* Pods-AzureEasyAuth_Example */ = {
+			isa = PBXGroup;
+			children = (
+				7B10FAB51803B1FD02F7C8115E572BB0 /* Info.plist */,
+				6CD7F15FFD021CFC69FCE9DFBCCD769B /* Pods-AzureEasyAuth_Example.modulemap */,
+				12A35A04D6AE940DE39EE4B48FDFB51E /* Pods-AzureEasyAuth_Example-acknowledgements.markdown */,
+				27CFAD80EE7C3586CD26AE0793CA6C33 /* Pods-AzureEasyAuth_Example-acknowledgements.plist */,
+				593BA96E9A664DBE6B5394DF9426D3C0 /* Pods-AzureEasyAuth_Example-dummy.m */,
+				B10356AFFEB8640124C3DD328D0C231B /* Pods-AzureEasyAuth_Example-frameworks.sh */,
+				BDF284BE2C4F6FDED7B1E84CC19CF6A8 /* Pods-AzureEasyAuth_Example-resources.sh */,
+				FFFA4C68BD2BD26030C884A33E34E671 /* Pods-AzureEasyAuth_Example-umbrella.h */,
+				EDB18099A1E30D7F742145EFA141AD63 /* Pods-AzureEasyAuth_Example.debug.xcconfig */,
+				5574B2285E9F1E1774ADAE313F96E576 /* Pods-AzureEasyAuth_Example.release.xcconfig */,
+			);
+			name = "Pods-AzureEasyAuth_Example";
+			path = "Target Support Files/Pods-AzureEasyAuth_Example";
+			sourceTree = "<group>";
+		};
+		0A3A6550B10E0740536756B04063656A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				72D88265E3E0D1582B9878479B3A112B /* ReplaceMe.m */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3BC2083C631D6464253274EE71A92B54 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				05C2DAB706890AA913C69DBB5F4D7BC4 /* Pods-AzureEasyAuth_Example */,
+				78766416A32F6BCA545E26EC958B857D /* Pods-AzureEasyAuth_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3C57BE5B2180A2548C288D8E5F637FE2 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AEEF5F7A4DBB432188E0F963FEA340CB /* AzureEasyAuth */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		78766416A32F6BCA545E26EC958B857D /* Pods-AzureEasyAuth_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B12F808711446D98E3DC12F5B1C28EF9 /* Info.plist */,
+				42E8A0673DEAD98E63DDA8DC4A9ACB7E /* Pods-AzureEasyAuth_Tests.modulemap */,
+				B7399C698B585EE7C5BDFAE837FC9273 /* Pods-AzureEasyAuth_Tests-acknowledgements.markdown */,
+				5AC6CE7432338A617CB67DA93E133B4C /* Pods-AzureEasyAuth_Tests-acknowledgements.plist */,
+				2989C988076CCB5A36CFF645DD9DB7AF /* Pods-AzureEasyAuth_Tests-dummy.m */,
+				94C34ED1AC51F39A926D5A60D053C6C0 /* Pods-AzureEasyAuth_Tests-frameworks.sh */,
+				AC58A02EE3883C553E37E46D66DF1694 /* Pods-AzureEasyAuth_Tests-resources.sh */,
+				9ACA9F832A55FA9C8A02CB6B32C59E10 /* Pods-AzureEasyAuth_Tests-umbrella.h */,
+				CF72A913D8786D62025EE593505AB75A /* Pods-AzureEasyAuth_Tests.debug.xcconfig */,
+				E0C4CDB9F9763176A3CA03B032C12B62 /* Pods-AzureEasyAuth_Tests.release.xcconfig */,
+			);
+			name = "Pods-AzureEasyAuth_Tests";
+			path = "Target Support Files/Pods-AzureEasyAuth_Tests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				3C57BE5B2180A2548C288D8E5F637FE2 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				D7DD790E8A316401AE4FD7ED1B54B8F8 /* Products */,
+				3BC2083C631D6464253274EE71A92B54 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A8BD6BE46CB0E5288F7E3B85D93F2955 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1D83D41CA82D702EC97914AE7E66D562 /* AzureEasyAuth.modulemap */,
+				E0A62FBABFAC0BAF791B40633CFA4A2C /* AzureEasyAuth.xcconfig */,
+				6BB9D9C6783E663FFC8B7743A7BC969B /* AzureEasyAuth-dummy.m */,
+				5D8A6FE0EB62EFAAB36367A8E5C1DAF9 /* AzureEasyAuth-prefix.pch */,
+				4047F3F2B090160B9BE8BAF4DBC0EB6A /* AzureEasyAuth-umbrella.h */,
+				742CC9C947720CD4E6D60C6F4D6F04CB /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/AzureEasyAuth";
+			sourceTree = "<group>";
+		};
+		AEEF5F7A4DBB432188E0F963FEA340CB /* AzureEasyAuth */ = {
+			isa = PBXGroup;
+			children = (
+				CA3D8EFA7137A3FC471C3EA397DB618F /* AzureEasyAuth */,
+				A8BD6BE46CB0E5288F7E3B85D93F2955 /* Support Files */,
+			);
+			name = AzureEasyAuth;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA3D8EFA7137A3FC471C3EA397DB618F /* AzureEasyAuth */ = {
+			isa = PBXGroup;
+			children = (
+				0A3A6550B10E0740536756B04063656A /* Classes */,
+			);
+			name = AzureEasyAuth;
+			path = AzureEasyAuth;
+			sourceTree = "<group>";
+		};
+		D7DD790E8A316401AE4FD7ED1B54B8F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAEEF91BF59A74AC0875B9B1423B2298 /* AzureEasyAuth.framework */,
+				FB921166649051C9C1584D05E7DD5FD3 /* Pods_AzureEasyAuth_Example.framework */,
+				F821677045744F664370BF4B7ECEB7D3 /* Pods_AzureEasyAuth_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0082924E3B69B407C9A1DA65F0F7FB69 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A8B1DADBCEDCE274C0057D7FFCF896D /* AzureEasyAuth-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B4996E2E3B664B6A67EE70DB1B40BCB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57A7A1CFA47FB6347BEBA3A6AFF301B5 /* Pods-AzureEasyAuth_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC0F71339BC25AA60C07745D2FADDCA5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F5AE83895DCC38E0A70CA15A4BAA53A /* Pods-AzureEasyAuth_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8AE89E385DAAF93E6B921B534CB491DF /* Pods-AzureEasyAuth_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0327A0C83921E27718894B4E2E0C9DE /* Build configuration list for PBXNativeTarget "Pods-AzureEasyAuth_Example" */;
+			buildPhases = (
+				5122B4E1501701D16772CA39E19D1ABE /* Sources */,
+				629C5528F4C390D27D5CD6EE6BEB8A95 /* Frameworks */,
+				CC0F71339BC25AA60C07745D2FADDCA5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D358E5AD6AE4CC184215487A55FA3323 /* PBXTargetDependency */,
+			);
+			name = "Pods-AzureEasyAuth_Example";
+			productName = "Pods-AzureEasyAuth_Example";
+			productReference = FB921166649051C9C1584D05E7DD5FD3 /* Pods_AzureEasyAuth_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9F0706AFC9C85290FF883C56DEEAC6EE /* Pods-AzureEasyAuth_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B844B32EC6BF7230E471600CD67BD5B /* Build configuration list for PBXNativeTarget "Pods-AzureEasyAuth_Tests" */;
+			buildPhases = (
+				D6A2D7772174C2607A6CBCDC896F02CC /* Sources */,
+				1BA27E1B41E0B420E2749AE2499E25E1 /* Frameworks */,
+				6B4996E2E3B664B6A67EE70DB1B40BCB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-AzureEasyAuth_Tests";
+			productName = "Pods-AzureEasyAuth_Tests";
+			productReference = F821677045744F664370BF4B7ECEB7D3 /* Pods_AzureEasyAuth_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DD850CEADFAED2C198C70644584B1786 /* AzureEasyAuth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEAD1C755EE116FE44192AE243CA2BE1 /* Build configuration list for PBXNativeTarget "AzureEasyAuth" */;
+			buildPhases = (
+				099AACB507B7F01530B42A31559C1EEB /* Sources */,
+				103D4302F04D94C5058E5EE0A6D3BB3E /* Frameworks */,
+				0082924E3B69B407C9A1DA65F0F7FB69 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AzureEasyAuth;
+			productName = AzureEasyAuth;
+			productReference = AAEEF91BF59A74AC0875B9B1423B2298 /* AzureEasyAuth.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = D7DD790E8A316401AE4FD7ED1B54B8F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD850CEADFAED2C198C70644584B1786 /* AzureEasyAuth */,
+				8AE89E385DAAF93E6B921B534CB491DF /* Pods-AzureEasyAuth_Example */,
+				9F0706AFC9C85290FF883C56DEEAC6EE /* Pods-AzureEasyAuth_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		099AACB507B7F01530B42A31559C1EEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9C38D45E27ED0113675F6A57EDBC5AE /* AzureEasyAuth-dummy.m in Sources */,
+				5EAB76E9C3EBFE61A37B936AB82F145F /* ReplaceMe.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5122B4E1501701D16772CA39E19D1ABE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CC1B4FF8A344A814075AC9BABBDD87B /* Pods-AzureEasyAuth_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6A2D7772174C2607A6CBCDC896F02CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1EC2A770DCD114C1E719A75E4C952B3 /* Pods-AzureEasyAuth_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D358E5AD6AE4CC184215487A55FA3323 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AzureEasyAuth;
+			target = DD850CEADFAED2C198C70644584B1786 /* AzureEasyAuth */;
+			targetProxy = 95E357D8D3BAFAFFDCEB8B03AB9658C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0BA90149C7D026498E5F46F72D435686 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0A62FBABFAC0BAF791B40633CFA4A2C /* AzureEasyAuth.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AzureEasyAuth/AzureEasyAuth-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AzureEasyAuth/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AzureEasyAuth/AzureEasyAuth.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AzureEasyAuth;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1A559EDB841A8602585529D3B467334F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0C4CDB9F9763176A3CA03B032C12B62 /* Pods-AzureEasyAuth_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AzureEasyAuth_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AzureEasyAuth_Tests/Pods-AzureEasyAuth_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AzureEasyAuth_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8FEC4B16398C8B7F9FDF42D721FC6065 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF72A913D8786D62025EE593505AB75A /* Pods-AzureEasyAuth_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AzureEasyAuth_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AzureEasyAuth_Tests/Pods-AzureEasyAuth_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AzureEasyAuth_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D7E760B63DB0D70E16A334ACF1575B2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0A62FBABFAC0BAF791B40633CFA4A2C /* AzureEasyAuth.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AzureEasyAuth/AzureEasyAuth-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AzureEasyAuth/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AzureEasyAuth/AzureEasyAuth.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AzureEasyAuth;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DB2E5E30F98586CB1A175962E0A08EE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5574B2285E9F1E1774ADAE313F96E576 /* Pods-AzureEasyAuth_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AzureEasyAuth_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AzureEasyAuth_Example/Pods-AzureEasyAuth_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AzureEasyAuth_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FE1137040B2D43D546C92324D1A4A28D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDB18099A1E30D7F742145EFA141AD63 /* Pods-AzureEasyAuth_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AzureEasyAuth_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AzureEasyAuth_Example/Pods-AzureEasyAuth_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AzureEasyAuth_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
+				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B844B32EC6BF7230E471600CD67BD5B /* Build configuration list for PBXNativeTarget "Pods-AzureEasyAuth_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FEC4B16398C8B7F9FDF42D721FC6065 /* Debug */,
+				1A559EDB841A8602585529D3B467334F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0327A0C83921E27718894B4E2E0C9DE /* Build configuration list for PBXNativeTarget "Pods-AzureEasyAuth_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE1137040B2D43D546C92324D1A4A28D /* Debug */,
+				DB2E5E30F98586CB1A175962E0A08EE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEAD1C755EE116FE44192AE243CA2BE1 /* Build configuration list for PBXNativeTarget "AzureEasyAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7E760B63DB0D70E16A334ACF1575B2C /* Debug */,
+				0BA90149C7D026498E5F46F72D435686 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

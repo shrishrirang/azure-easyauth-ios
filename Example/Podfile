@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AzureEasyAuth_Example' do
+  pod 'AzureEasyAuth', :path => '../'
+
+  target 'AzureEasyAuth_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

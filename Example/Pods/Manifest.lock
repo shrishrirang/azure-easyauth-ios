@@ -1,0 +1,16 @@
+PODS:
+  - AzureEasyAuth (0.1.0)
+
+DEPENDENCIES:
+  - AzureEasyAuth (from `../`)
+
+EXTERNAL SOURCES:
+  AzureEasyAuth:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AzureEasyAuth: 21610034d74e8ff25dc7aa1bf7a524160031aca1
+
+PODFILE CHECKSUM: 0f91dff146a3375bcb1c2c8e2a401c7742012c98
+
+COCOAPODS: 1.2.0

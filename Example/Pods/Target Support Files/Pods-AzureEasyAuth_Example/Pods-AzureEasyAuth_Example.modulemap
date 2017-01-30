@@ -1,0 +1,6 @@
+framework module Pods_AzureEasyAuth_Example {
+  umbrella header "Pods-AzureEasyAuth_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
