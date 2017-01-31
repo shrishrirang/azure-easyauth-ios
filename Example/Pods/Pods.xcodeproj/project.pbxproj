@@ -15,6 +15,7 @@
 		5EAB76E9C3EBFE61A37B936AB82F145F /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 72D88265E3E0D1582B9878479B3A112B /* ReplaceMe.m */; };
 		8BF1B7C1A344AEF7D3F8DF7DE06DAAAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		B1EC2A770DCD114C1E719A75E4C952B3 /* Pods-AzureEasyAuth_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2989C988076CCB5A36CFF645DD9DB7AF /* Pods-AzureEasyAuth_Tests-dummy.m */; };
+		D04A50CC1E4070120074699C /* AzureEasyAuth.modulemap in Headers */ = {isa = PBXBuildFile; fileRef = 1D83D41CA82D702EC97914AE7E66D562 /* AzureEasyAuth.modulemap */; settings = {ATTRIBUTES = (Public, ); }; };
 		E31798EB2AAEC6579FB5C79F685E57DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		F9C38D45E27ED0113675F6A57EDBC5AE /* AzureEasyAuth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB9D9C6783E663FFC8B7743A7BC969B /* AzureEasyAuth-dummy.m */; };
 /* End PBXBuildFile section */
@@ -31,24 +32,24 @@
 
 /* Begin PBXFileReference section */
 		12A35A04D6AE940DE39EE4B48FDFB51E /* Pods-AzureEasyAuth_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AzureEasyAuth_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1D83D41CA82D702EC97914AE7E66D562 /* AzureEasyAuth.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AzureEasyAuth.modulemap; sourceTree = "<group>"; };
+		1D83D41CA82D702EC97914AE7E66D562 /* AzureEasyAuth.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AzureEasyAuth.modulemap; sourceTree = "<group>"; };
 		27CFAD80EE7C3586CD26AE0793CA6C33 /* Pods-AzureEasyAuth_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AzureEasyAuth_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		2989C988076CCB5A36CFF645DD9DB7AF /* Pods-AzureEasyAuth_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AzureEasyAuth_Tests-dummy.m"; sourceTree = "<group>"; };
 		4047F3F2B090160B9BE8BAF4DBC0EB6A /* AzureEasyAuth-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AzureEasyAuth-umbrella.h"; sourceTree = "<group>"; };
-		42E8A0673DEAD98E63DDA8DC4A9ACB7E /* Pods-AzureEasyAuth_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AzureEasyAuth_Tests.modulemap"; sourceTree = "<group>"; };
+		42E8A0673DEAD98E63DDA8DC4A9ACB7E /* Pods-AzureEasyAuth_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AzureEasyAuth_Tests.modulemap"; sourceTree = "<group>"; };
 		5574B2285E9F1E1774ADAE313F96E576 /* Pods-AzureEasyAuth_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AzureEasyAuth_Example.release.xcconfig"; sourceTree = "<group>"; };
 		593BA96E9A664DBE6B5394DF9426D3C0 /* Pods-AzureEasyAuth_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AzureEasyAuth_Example-dummy.m"; sourceTree = "<group>"; };
 		5AC6CE7432338A617CB67DA93E133B4C /* Pods-AzureEasyAuth_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AzureEasyAuth_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		5D8A6FE0EB62EFAAB36367A8E5C1DAF9 /* AzureEasyAuth-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AzureEasyAuth-prefix.pch"; sourceTree = "<group>"; };
 		6BB9D9C6783E663FFC8B7743A7BC969B /* AzureEasyAuth-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AzureEasyAuth-dummy.m"; sourceTree = "<group>"; };
-		6CD7F15FFD021CFC69FCE9DFBCCD769B /* Pods-AzureEasyAuth_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AzureEasyAuth_Example.modulemap"; sourceTree = "<group>"; };
+		6CD7F15FFD021CFC69FCE9DFBCCD769B /* Pods-AzureEasyAuth_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AzureEasyAuth_Example.modulemap"; sourceTree = "<group>"; };
 		72D88265E3E0D1582B9878479B3A112B /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
 		742CC9C947720CD4E6D60C6F4D6F04CB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B10FAB51803B1FD02F7C8115E572BB0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94C34ED1AC51F39A926D5A60D053C6C0 /* Pods-AzureEasyAuth_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AzureEasyAuth_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		9ACA9F832A55FA9C8A02CB6B32C59E10 /* Pods-AzureEasyAuth_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AzureEasyAuth_Tests-umbrella.h"; sourceTree = "<group>"; };
-		AAEEF91BF59A74AC0875B9B1423B2298 /* AzureEasyAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AzureEasyAuth.framework; path = AzureEasyAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAEEF91BF59A74AC0875B9B1423B2298 /* AzureEasyAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AzureEasyAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC58A02EE3883C553E37E46D66DF1694 /* Pods-AzureEasyAuth_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AzureEasyAuth_Tests-resources.sh"; sourceTree = "<group>"; };
 		B10356AFFEB8640124C3DD328D0C231B /* Pods-AzureEasyAuth_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AzureEasyAuth_Example-frameworks.sh"; sourceTree = "<group>"; };
 		B12F808711446D98E3DC12F5B1C28EF9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,8 +60,8 @@
 		E0A62FBABFAC0BAF791B40633CFA4A2C /* AzureEasyAuth.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AzureEasyAuth.xcconfig; sourceTree = "<group>"; };
 		E0C4CDB9F9763176A3CA03B032C12B62 /* Pods-AzureEasyAuth_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AzureEasyAuth_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		EDB18099A1E30D7F742145EFA141AD63 /* Pods-AzureEasyAuth_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AzureEasyAuth_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		F821677045744F664370BF4B7ECEB7D3 /* Pods_AzureEasyAuth_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AzureEasyAuth_Tests.framework; path = "Pods-AzureEasyAuth_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB921166649051C9C1584D05E7DD5FD3 /* Pods_AzureEasyAuth_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AzureEasyAuth_Example.framework; path = "Pods-AzureEasyAuth_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F821677045744F664370BF4B7ECEB7D3 /* Pods_AzureEasyAuth_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AzureEasyAuth_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB921166649051C9C1584D05E7DD5FD3 /* Pods_AzureEasyAuth_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AzureEasyAuth_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFFA4C68BD2BD26030C884A33E34E671 /* Pods-AzureEasyAuth_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AzureEasyAuth_Example-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,7 +116,6 @@
 			children = (
 				72D88265E3E0D1582B9878479B3A112B /* ReplaceMe.m */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -210,7 +210,6 @@
 			children = (
 				0A3A6550B10E0740536756B04063656A /* Classes */,
 			);
-			name = AzureEasyAuth;
 			path = AzureEasyAuth;
 			sourceTree = "<group>";
 		};
@@ -232,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A8B1DADBCEDCE274C0057D7FFCF896D /* AzureEasyAuth-umbrella.h in Headers */,
+				D04A50CC1E4070120074699C /* AzureEasyAuth.modulemap in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
