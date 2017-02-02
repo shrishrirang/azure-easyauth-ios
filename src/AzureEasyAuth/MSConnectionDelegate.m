@@ -3,7 +3,6 @@
 // ----------------------------------------------------------------------------
 
 #import "MSConnectionDelegate.h"
-#import "MSClient.h"
 #import "NSURLSessionTask+Completion.h"
 
 @implementation MSConnectionDelegate
@@ -38,7 +37,7 @@
     // Only follow redirects to the Microsoft Azure Mobile Service and not
     // to other hosts
     NSString *requestHost = request.URL.host;
-    NSString *applicationHost = self.client.applicationURL.host;
+    NSString *applicationHost = @"";//FIXME: self.client.applicationURL.host;
     if ([applicationHost isEqualToString:requestHost])
     {
         newRequest = request;

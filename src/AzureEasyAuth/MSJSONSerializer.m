@@ -3,9 +3,8 @@
 // ----------------------------------------------------------------------------
 
 #import "MSJSONSerializer.h"
-#import "MSClient.h"
 #import "MSNaiveISODateFormatter.h"
-
+#import "MSError.h"
 
 #pragma mark * Mobile Services Special Keys String Constants
 

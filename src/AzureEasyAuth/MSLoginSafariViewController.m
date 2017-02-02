@@ -4,7 +4,6 @@
 
 #import <UIKit/UIKit.h>
 #import <SafariServices/SafariServices.h>
-#import "MSClient.h"
 #import "MSLoginSafariViewController.h"
 #import "MSLoginSafariViewControllerUtilities.h"
 #import "MSAuthState.h"
@@ -13,6 +12,7 @@
 #import "MSJSONSerializer.h"
 #import "MSUser.h"
 #import "MSURLBuilder.h"
+#import "MSError.h"
 
 @interface MSLoginSafariViewController() <SFSafariViewControllerDelegate>
 
@@ -109,7 +109,7 @@
                                                  urlScheme:urlScheme
                                                   animated:animated];
     
-    NSURL *loginURL = [MSLoginSafariViewControllerUtilities loginURLFromApplicationURL:self.client.applicationURL
+    NSURL *loginURL = [MSLoginSafariViewControllerUtilities loginURLFromApplicationURL:nil //FIXME
                                                                               provider:self.authState.provider
                                                                              urlScheme:urlScheme
                                                                             parameters:parameters
@@ -158,7 +158,7 @@
         
         if (authorizationCode) {
             
-            codeExchangeURL = [MSLoginSafariViewControllerUtilities codeExchangeURLFromApplicationURL:self.client.applicationURL
+            codeExchangeURL = [MSLoginSafariViewControllerUtilities codeExchangeURLFromApplicationURL:nil // FIXME self.client.applicationURL
                                                                      provider:self.authState.provider
                                                                      authorizationCode:authorizationCode
                                                                 codeVerifier:self.authState.codeVerifier];
@@ -193,7 +193,7 @@
                     MSUser *user = [[MSLoginSerializer loginSerializer] userFromData:data orError:&responseError];
                     
                     if (user && !responseError) {
-                        self.client.currentUser = user;
+                        //self.client.currentUser = user; FIXME
                         completion(user, responseError);
                     }
                 }

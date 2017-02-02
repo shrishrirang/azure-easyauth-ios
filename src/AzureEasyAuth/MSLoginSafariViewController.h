@@ -3,7 +3,7 @@
 // ----------------------------------------------------------------------------
 
 #import <UIKit/UIKit.h>
-#import "MSClient.h"
+#import "MSBlockDefinitions.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
