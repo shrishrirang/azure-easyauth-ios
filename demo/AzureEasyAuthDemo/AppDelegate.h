@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AzureEasyAuth/AzureEasyAuth.h"
+@import AzureEasyAuth;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
