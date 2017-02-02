@@ -3,7 +3,6 @@
 // ----------------------------------------------------------------------------
 
 #import "MSUserAgentBuilder.h"
-#import "MicrosoftAzureMobile.h"
 #if TARGET_OS_IPHONE
 #import <UIKit/UIKit.h>
 #endif
@@ -50,13 +49,13 @@ static NSString *const sdkFileVesionFormat = @"%d.%d.%d";
 	OS = @"OSX";
 	model = @"Mac";
 #endif
-    NSString *sdkVersion = [NSString stringWithFormat:sdkVersionFormat,
-                                MicrosoftAzureMobileSdkMajorVersion,
-                                MicrosoftAzureMobileSdkMinorVersion];
-    NSString *fileVersion = [NSString stringWithFormat:sdkFileVesionFormat,
-                                MicrosoftAzureMobileSdkMajorVersion,
-                                MicrosoftAzureMobileSdkMinorVersion,
-                                MicrosoftAzureMobileSdkBuildVersion ];
+    NSString *sdkVersion = @"FIXME"; //[NSString stringWithFormat:sdkVersionFormat,
+                                // MicrosoftAzureMobileSdkMajorVersion,
+                                // MicrosoftAzureMobileSdkMinorVersion];
+    NSString *fileVersion = @"FIXME"; //[NSString stringWithFormat:sdkFileVesionFormat,
+                                // MicrosoftAzureMobileSdkMajorVersion,
+                                // MicrosoftAzureMobileSdkMinorVersion,
+                                // MicrosoftAzureMobileSdkBuildVersion ];
     
     // Build the user agent string
     NSString *userAgent = [NSString stringWithFormat:userAgentValueFormat,

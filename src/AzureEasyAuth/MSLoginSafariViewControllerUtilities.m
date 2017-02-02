@@ -6,7 +6,6 @@
 #import <SafariServices/SafariServices.h>
 #import <Security/SecRandom.h>
 #import <CommonCrypto/CommonDigest.h>
-#import "MSClient.h"
 #import "MSLoginSafariViewControllerUtilities.h"
 #import "MSURLBuilder.h"
 

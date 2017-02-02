@@ -6,10 +6,11 @@
 #import "MSUserAgentBuilder.h"
 #import "MSFilter.h"
 #import "MSUser.h"
-#import "MSClientInternal.h"
 #import "MSSDKFeatures.h"
 #import <objc/runtime.h>
 #import "NSURLSessionTask+Completion.h"
+#import "MSJSONSerializer.h"
+#import "MSError.h"
 
 #pragma mark * NSURLSessionTask(Completion) implementation
 
@@ -95,8 +96,8 @@ static NSOperationQueue *delegateQueue;
 
 -(void) start
 {
-    [MSClientConnection invokeNextFilter:self.client.filters
-                              withClient:self.client
+    [MSClientConnection invokeNextFilter:nil //FIXME
+                              withClient:nil //FIXME
                              withRequest:self.request
                               completion:self.completion];
 }
@@ -122,7 +123,8 @@ static NSOperationQueue *delegateQueue;
     
     if (!isSuccessful && self.completion && error) {
         // Read the error message from the response body
-        *error =[self.client.serializer errorFromData:data
+        //FIXME
+        *error =[[MSJSONSerializer JSONSerializer] errorFromData:data
                                              MIMEType:response.MIMEType];
         [self addRequestAndResponse:response toError:error];
     }
@@ -136,7 +138,7 @@ static NSOperationQueue *delegateQueue;
           orError:(NSError **)error
 {
     // Try to deserialize the data
-    id item = [self.client.serializer itemFromData:data
+    id item = [[MSJSONSerializer JSONSerializer] itemFromData:data
                                   withOriginalItem:nil
                                   ensureDictionary:ensureDictionary
                                            orError:error];
@@ -181,10 +183,11 @@ static NSOperationQueue *delegateQueue;
 		// No filters to invoke so use |NSURLSessionDataTask | to actually
 		// send the request.
 		
-		NSURLSessionDataTask *task = [client.urlSession dataTaskWithRequest:request];
-        task.completion = completion;
+        //FIXME: replace this entire file with old implementation
+		//NSURLSessionDataTask *task = [client.urlSession dataTaskWithRequest:request];
+        //task.completion = completion;
         
-		[task resume];
+		//[task resume];
     }
     else {
         
@@ -214,49 +217,7 @@ static NSOperationQueue *delegateQueue;
                                  withClient:(MSClient *)client
                                 withFeatures:(MSFeatures)features
 {
-    NSMutableURLRequest *mutableRequest = [request mutableCopy];
-    
-    NSString *requestHost = request.URL.host;
-    NSString *applicationHost = client.applicationURL.host;
-    if ([applicationHost isEqualToString:requestHost])
-    {
-        // Add the authentication header if the user is logged in
-        if (client.currentUser &&
-            client.currentUser.mobileServiceAuthenticationToken) {
-            [mutableRequest
-             setValue:client.currentUser.mobileServiceAuthenticationToken
-             forHTTPHeaderField:xZumoAuth];
-        }
-        
-        // Set the User Agent header
-        NSString *userAgentValue = [MSUserAgentBuilder userAgent];
-        [mutableRequest setValue:userAgentValue
-              forHTTPHeaderField:userAgentHeader];
-        
-        // Set the Zumo Version Header
-        [mutableRequest setValue:userAgentValue
-              forHTTPHeaderField:zumoVersionHeader];
-        
-        // Set the Zumo API Version Header for table, api, push, etc requests only
-        // Exemptions will need added if later on we use a wrapping MSLoginRequest object
-        if (![request isMemberOfClass:[NSURLRequest class]]) {
-            [mutableRequest setValue:@"2.0.0" forHTTPHeaderField:zumoApiVersionHeader];
-        }
-        
-        // Set the installation id header
-        [mutableRequest setValue:client.installId forHTTPHeaderField:xZumoInstallId];
-        
-        if ([request HTTPBody] &&
-             ![request valueForHTTPHeaderField:contentTypeHeader]) {
-            // Set the content type header
-            [mutableRequest setValue:jsonContentType
-                  forHTTPHeaderField:contentTypeHeader];
-        }
-    }
-    
-    [mutableRequest setValue:[MSSDKFeatures httpHeaderForFeatures:features] forHTTPHeaderField:MSFeaturesHeaderName];
-    
-    return mutableRequest;
+    return nil;
 }
 
 
