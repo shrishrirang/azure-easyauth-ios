@@ -9,19 +9,19 @@
 /* Begin PBXBuildFile section */
 		D0BC1C931E43AF2800AB6E98 /* MSAuthState.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C711E43AF2800AB6E98 /* MSAuthState.h */; };
 		D0BC1C941E43AF2800AB6E98 /* MSAuthState.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C721E43AF2800AB6E98 /* MSAuthState.m */; };
-		D0BC1C951E43AF2800AB6E98 /* MSBlockDefinitions.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C731E43AF2800AB6E98 /* MSBlockDefinitions.h */; };
+		D0BC1C951E43AF2800AB6E98 /* MSBlockDefinitions.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C731E43AF2800AB6E98 /* MSBlockDefinitions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0BC1C961E43AF2800AB6E98 /* MSClientConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C741E43AF2800AB6E98 /* MSClientConnection.h */; };
 		D0BC1C971E43AF2800AB6E98 /* MSClientConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C751E43AF2800AB6E98 /* MSClientConnection.m */; };
 		D0BC1C981E43AF2800AB6E98 /* MSConnectionConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C761E43AF2800AB6E98 /* MSConnectionConfiguration.h */; };
 		D0BC1C991E43AF2800AB6E98 /* MSConnectionConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C771E43AF2800AB6E98 /* MSConnectionConfiguration.m */; };
 		D0BC1C9A1E43AF2800AB6E98 /* MSDateOffset.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C781E43AF2800AB6E98 /* MSDateOffset.h */; };
 		D0BC1C9B1E43AF2800AB6E98 /* MSDateOffset.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C791E43AF2800AB6E98 /* MSDateOffset.m */; };
-		D0BC1C9C1E43AF2800AB6E98 /* MSError.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C7A1E43AF2800AB6E98 /* MSError.h */; };
+		D0BC1C9C1E43AF2800AB6E98 /* MSError.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C7A1E43AF2800AB6E98 /* MSError.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0BC1C9D1E43AF2800AB6E98 /* MSError.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C7B1E43AF2800AB6E98 /* MSError.m */; };
 		D0BC1C9E1E43AF2800AB6E98 /* MSFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C7C1E43AF2800AB6E98 /* MSFilter.h */; };
 		D0BC1C9F1E43AF2800AB6E98 /* MSJSONSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C7D1E43AF2800AB6E98 /* MSJSONSerializer.h */; };
 		D0BC1CA01E43AF2800AB6E98 /* MSJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C7E1E43AF2800AB6E98 /* MSJSONSerializer.m */; };
-		D0BC1CA11E43AF2800AB6E98 /* MSLoginSafariViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C7F1E43AF2800AB6E98 /* MSLoginSafariViewController.h */; };
+		D0BC1CA11E43AF2800AB6E98 /* MSLoginSafariViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C7F1E43AF2800AB6E98 /* MSLoginSafariViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0BC1CA21E43AF2800AB6E98 /* MSLoginSafariViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C801E43AF2800AB6E98 /* MSLoginSafariViewController.m */; };
 		D0BC1CA31E43AF2800AB6E98 /* MSLoginSafariViewControllerUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C811E43AF2800AB6E98 /* MSLoginSafariViewControllerUtilities.h */; };
 		D0BC1CA41E43AF2800AB6E98 /* MSLoginSafariViewControllerUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C821E43AF2800AB6E98 /* MSLoginSafariViewControllerUtilities.m */; };
@@ -37,7 +37,7 @@
 		D0BC1CAE1E43AF2800AB6E98 /* MSSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C8C1E43AF2800AB6E98 /* MSSerializer.h */; };
 		D0BC1CAF1E43AF2800AB6E98 /* MSURLBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C8D1E43AF2800AB6E98 /* MSURLBuilder.h */; };
 		D0BC1CB01E43AF2800AB6E98 /* MSURLBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C8E1E43AF2800AB6E98 /* MSURLBuilder.m */; };
-		D0BC1CB11E43AF2800AB6E98 /* MSUser.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C8F1E43AF2800AB6E98 /* MSUser.h */; };
+		D0BC1CB11E43AF2800AB6E98 /* MSUser.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C8F1E43AF2800AB6E98 /* MSUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0BC1CB21E43AF2800AB6E98 /* MSUser.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C901E43AF2800AB6E98 /* MSUser.m */; };
 		D0BC1CB31E43AF2800AB6E98 /* MSUserAgentBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C911E43AF2800AB6E98 /* MSUserAgentBuilder.h */; };
 		D0BC1CB41E43AF2800AB6E98 /* MSUserAgentBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C921E43AF2800AB6E98 /* MSUserAgentBuilder.m */; };
@@ -161,26 +161,26 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0F6B1921E43A97D008A1FDB /* AzureEasyAuth.h in Headers */,
+				D0BC1C951E43AF2800AB6E98 /* MSBlockDefinitions.h in Headers */,
 				D0BC1C9C1E43AF2800AB6E98 /* MSError.h in Headers */,
 				D0BC1CA71E43AF2800AB6E98 /* MSNaiveISODateFormatter.h in Headers */,
+				D0BC1CA11E43AF2800AB6E98 /* MSLoginSafariViewController.h in Headers */,
+				D0BC1CB11E43AF2800AB6E98 /* MSUser.h in Headers */,
+				D0BC1CA31E43AF2800AB6E98 /* MSLoginSafariViewControllerUtilities.h in Headers */,
 				D0BC1C931E43AF2800AB6E98 /* MSAuthState.h in Headers */,
 				D0BC1C961E43AF2800AB6E98 /* MSClientConnection.h in Headers */,
 				D0BC1CA91E43AF2800AB6E98 /* MSPullSettings.h in Headers */,
-				D0F6B1921E43A97D008A1FDB /* AzureEasyAuth.h in Headers */,
 				D0BC1CAC1E43AF2800AB6E98 /* MSSDKFeatures.h in Headers */,
 				D0BC1CAE1E43AF2800AB6E98 /* MSSerializer.h in Headers */,
 				D0BC1CA51E43AF2800AB6E98 /* MSLoginSerializer.h in Headers */,
 				D0BC1C9A1E43AF2800AB6E98 /* MSDateOffset.h in Headers */,
 				D0BC1C981E43AF2800AB6E98 /* MSConnectionConfiguration.h in Headers */,
 				D0BC1CB31E43AF2800AB6E98 /* MSUserAgentBuilder.h in Headers */,
-				D0BC1CA31E43AF2800AB6E98 /* MSLoginSafariViewControllerUtilities.h in Headers */,
 				D0BC1C9E1E43AF2800AB6E98 /* MSFilter.h in Headers */,
-				D0BC1CA11E43AF2800AB6E98 /* MSLoginSafariViewController.h in Headers */,
 				D0BC1CAB1E43AF2800AB6E98 /* MSPullSettingsInternal.h in Headers */,
 				D0BC1C9F1E43AF2800AB6E98 /* MSJSONSerializer.h in Headers */,
-				D0BC1CB11E43AF2800AB6E98 /* MSUser.h in Headers */,
 				D0BC1CAF1E43AF2800AB6E98 /* MSURLBuilder.h in Headers */,
-				D0BC1C951E43AF2800AB6E98 /* MSBlockDefinitions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +216,7 @@
 				TargetAttributes = {
 					D0F6B18C1E43A97D008A1FDB = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = KKNVUNX8DK;
 						ProvisioningStyle = Automatic;
 					};
 				};
