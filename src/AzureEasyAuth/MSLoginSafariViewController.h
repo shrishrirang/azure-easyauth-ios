@@ -11,10 +11,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MSLoginSafariViewController : UIViewController
 
-@property (nonatomic)MSClient* client;
+@property (nonatomic) NSURL* backendUrl;
 
-/// Initializes an |MSLoginSafariViewController| instance with the given client
-- (instancetype)initWithClient:(MSClient *)client;
+/// Initializes an |MSLoginSafariViewController| instance with the given backend url
+- (instancetype)initWithBackendUrl:(NSString *)url;
 
 
 /// Logs in the current end user with given provider by presenting the
