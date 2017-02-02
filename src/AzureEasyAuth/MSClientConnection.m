@@ -6,46 +6,8 @@
 #import "MSUserAgentBuilder.h"
 #import "MSFilter.h"
 #import "MSUser.h"
-#import "MSSDKFeatures.h"
-#import <objc/runtime.h>
-#import "NSURLSessionTask+Completion.h"
-#import "MSJSONSerializer.h"
+#import "MSJsonSerializer.h"
 #import "MSError.h"
-
-#pragma mark * NSURLSessionTask(Completion) implementation
-
-@implementation NSURLSessionTask(Completion)
-@dynamic completion;
-@dynamic data;
-
-- (MSResponseBlock)completion
-{
-    return objc_getAssociatedObject(self, @selector(completion));
-}
-
-- (void)setCompletion:(MSResponseBlock)completion
-{
-    objc_setAssociatedObject(self, @selector(completion), completion, OBJC_ASSOCIATION_COPY_NONATOMIC);
-}
-
-- (NSMutableData *)data
-{
-    NSMutableData *_data = objc_getAssociatedObject(self, @selector(data));
-    if (!_data) {
-        _data = [NSMutableData data];
-        // Call the explicit setter so the setAssociatedObject method gets called to retain the data
-        self.data = _data;
-    }
-    
-    return _data;
-}
-
-- (void)setData:(NSMutableData *)data
-{
-    objc_setAssociatedObject(self, @selector(data), data, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-
-@end
 
 #pragma mark * HTTP Header String Constants
 
@@ -58,6 +20,24 @@ static NSString *const jsonContentType = @"application/json";
 static NSString *const xZumoAuth = @"X-ZUMO-AUTH";
 static NSString *const xZumoInstallId = @"X-ZUMO-INSTALLATION-ID";
 
+#pragma mark * MSConnectionDelegate Private Interface
+
+
+// The |MSConnectionDelegate| is a private class that implements the
+// |NSURLSessionDataDelegate| and surfaces success and error blocks. It
+// is used only by the |MSClientConnection|.
+@interface MSConnectionDelegate : NSObject <NSURLSessionDataDelegate>
+
+@property (nonatomic, strong)               MSClient *client;
+@property (nonatomic, strong)               NSData *data;
+@property (nonatomic, copy)                 MSResponseBlock completion;
+
+-(id) initWithClient:(MSClient *)client
+          completion:(MSResponseBlock)completion;
+
+@end
+
+
 #pragma mark * MSClientConnection Implementation
 
 
@@ -65,39 +45,46 @@ static NSString *const xZumoInstallId = @"X-ZUMO-INSTALLATION-ID";
 
 static NSOperationQueue *delegateQueue;
 
-# pragma mark * Public Initializer Methods
+@synthesize client = client_;
+@synthesize request = request_;
+@synthesize completion = completion_;
 
--(id) initWithRequest:(NSURLRequest *)request
-               client:(MSClient *)client
-           completion:(MSResponseBlock)completion
++(NSURLSession *)sessionWithDelegate:(id<NSURLSessionDelegate>)delegate delegateQueue:(NSOperationQueue *)queue
 {
-    return [self initWithRequest:request client:client features:MSFeatureNone completion:completion];
+    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration
+                                                          delegate:delegate
+                                                     delegateQueue:queue];
+    return session;
 }
 
+# pragma mark * Public Initializer Methods
+
+
 -(id) initWithRequest:(NSURLRequest *)request
                client:(MSClient *)client
-             features:(MSFeatures)features
            completion:(MSResponseBlock)completion
 {
     self = [super init];
     if (self) {
-        _client = client;
-        _request = [MSClientConnection configureHeadersOnRequest:request
-                                                      withClient:client
-                                                    withFeatures:features];
-        _completion = [completion copy];
+        client_ = client;
+        request_ = [MSClientConnection configureHeadersOnRequest:request
+                                                      withClient:client];
+        completion_ = [completion copy];
     }
     
     return self;
 }
+
 
 #pragma mark * Public Start Methods
 
 
 -(void) start
 {
-    [MSClientConnection invokeNextFilter:nil //FIXME
-                              withClient:nil //FIXME
+    [MSClientConnection invokeNextFilter:nil // FIXME
+                              withClient:nil // FIXME
                              withRequest:self.request
                               completion:self.completion];
 }
@@ -105,7 +92,7 @@ static NSOperationQueue *delegateQueue;
 -(void) startWithoutFilters
 {
     [MSClientConnection invokeNextFilter:nil
-                              withClient:self.client
+                              withClient:nil // FIXME
                              withRequest:self.request
                               completion:self.completion];
 }
@@ -123,7 +110,6 @@ static NSOperationQueue *delegateQueue;
     
     if (!isSuccessful && self.completion && error) {
         // Read the error message from the response body
-        //FIXME
         *error =[[MSJSONSerializer JSONSerializer] errorFromData:data
                                              MIMEType:response.MIMEType];
         [self addRequestAndResponse:response toError:error];
@@ -134,8 +120,8 @@ static NSOperationQueue *delegateQueue;
 
 -(id) itemFromData:(NSData *)data
           response:(NSHTTPURLResponse *)response
-          ensureDictionary:(BOOL)ensureDictionary
-          orError:(NSError **)error
+  ensureDictionary:(BOOL)ensureDictionary
+           orError:(NSError **)error
 {
     // Try to deserialize the data
     id item = [[MSJSONSerializer JSONSerializer] itemFromData:data
@@ -177,17 +163,23 @@ static NSOperationQueue *delegateQueue;
 +(void) invokeNextFilter:(NSArray<id<MSFilter>> *)filters
               withClient:(MSClient *)client
              withRequest:(NSURLRequest *)request
-               completion:(MSFilterResponseBlock)completion
+              completion:(MSFilterResponseBlock)completion
 {
     if (!filters || filters.count == 0) {
-		// No filters to invoke so use |NSURLSessionDataTask | to actually
-		// send the request.
-		
-        //FIXME: replace this entire file with old implementation
-		//NSURLSessionDataTask *task = [client.urlSession dataTaskWithRequest:request];
-        //task.completion = completion;
+        // No filters to invoke so use |NSURLSessionDataTask | to actually
+        // send the request.
         
-		//[task resume];
+        NSOperationQueue *taskQueue = [NSOperationQueue mainQueue];
+        
+        MSConnectionDelegate *delegate = [[MSConnectionDelegate alloc]
+                                          initWithClient:client
+                                          completion:completion];
+        
+        NSURLSession *session = [self sessionWithDelegate:delegate delegateQueue:taskQueue];
+        NSURLSessionDataTask *task = [session dataTaskWithRequest:request];
+        [task resume];
+        
+        [session finishTasksAndInvalidate];
     }
     else {
         
@@ -195,30 +187,137 @@ static NSOperationQueue *delegateQueue;
         // for it and then invoke the filter
         id<MSFilter> nextFilter = [filters objectAtIndex:0];
         NSArray<id<MSFilter>> *nextFilters = [filters subarrayWithRange:
-                                NSMakeRange(1, filters.count - 1)];
-    
+                                              NSMakeRange(1, filters.count - 1)];
+        
         MSFilterNextBlock onNext =
         [^(NSURLRequest *onNextRequest,
            MSFilterResponseBlock onNextResponse)
-        {
-            [MSClientConnection invokeNextFilter:nextFilters
-                                      withClient:client
-                                     withRequest:onNextRequest
-                                      completion:onNextResponse];                                    
-        } copy];
+         {
+             [MSClientConnection invokeNextFilter:nextFilters
+                                       withClient:client
+                                      withRequest:onNextRequest
+                                       completion:onNextResponse];
+         } copy];
         
         [nextFilter handleRequest:request
-                           next:onNext
-                       response:completion];
+                             next:onNext
+                         response:completion];
     }
 }
 
 +(NSURLRequest *) configureHeadersOnRequest:(NSURLRequest *)request
                                  withClient:(MSClient *)client
-                                withFeatures:(MSFeatures)features
 {
-    return nil;
+    NSMutableURLRequest *mutableRequest = [request mutableCopy];
+    
+    // Set the User Agent header
+    NSString *userAgentValue = [MSUserAgentBuilder userAgent];
+    [mutableRequest setValue:userAgentValue
+          forHTTPHeaderField:userAgentHeader];
+    
+    // Set the Zumo Version Header
+    [mutableRequest setValue:userAgentValue
+          forHTTPHeaderField:zumoVersionHeader];
+    
+    // Set the Zumo API Version Header for table, api, push, etc requests only
+    // Exemptions will need added if later on we use a wrapping MSLoginRequest object
+    if (![request isMemberOfClass:[NSURLRequest class]]) {
+        [mutableRequest setValue:@"2.0.0" forHTTPHeaderField:zumoApiVersionHeader];
+    }
+    
+    if ([request HTTPBody] &&
+        ![request valueForHTTPHeaderField:contentTypeHeader]) {
+        // Set the content type header
+        [mutableRequest setValue:jsonContentType
+              forHTTPHeaderField:contentTypeHeader];
+    }
+    
+    return mutableRequest;
 }
 
 
 @end
+
+
+#pragma mark * MSConnectionDelegate Private Implementation
+
+
+@implementation MSConnectionDelegate
+
+@synthesize client = client_;
+@synthesize completion = completion_;
+@synthesize data = data_;
+
+
+# pragma mark * Public Initializer Methods
+
+
+-(id) initWithClient:(MSClient *)client
+          completion:(MSResponseBlock)completion
+{
+    self = [super init];
+    if (self) {
+        client_ = client;
+        completion_ = [completion copy];
+    }
+    
+    return self;
+}
+
+# pragma mark * NSURLSessionDataDelegate Methods
+
+-(void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask willCacheResponse:(NSCachedURLResponse *)proposedResponse completionHandler:(void (^)(NSCachedURLResponse *cachedResponse))completionHandler
+{
+    // We don't want to cache anything
+    completionHandler(nil);
+}
+
+-(void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask didReceiveData:(NSData *)data
+{
+    // If we haven't received any data before, just take this data instance
+    if (!self.data) {
+        self.data = data;
+    }
+    else {
+        
+        // Otherwise, append this data to what we have
+        NSMutableData *newData = [NSMutableData dataWithData:self.data];
+        [newData appendData:data];
+        self.data = newData;
+    }
+}
+
+// FIXME - method needed? also, review implementation
+-(void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task willPerformHTTPRedirection:(NSHTTPURLResponse *)response newRequest:(NSURLRequest *)request completionHandler:(void (^)(NSURLRequest *))completionHandler
+{
+//    NSURLRequest *newRequest = nil;
+//    
+//    // Only follow redirects to the Microsoft Azure Mobile Service and not
+//    // to other hosts
+//    NSString *requestHost = request.URL.host;
+//    NSString *applicationHost = self.client.applicationURL.host;
+//    if ([applicationHost isEqualToString:requestHost])
+//    {
+//        newRequest = request;
+//    }
+    
+    completionHandler(request);
+}
+
+-(void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didCompleteWithError:(NSError *)error
+{
+    if (self.completion) {
+        self.completion((NSHTTPURLResponse *)task.response, self.data, error);
+        [self cleanup];
+    }
+}
+
+-(void) cleanup
+{
+    self.client = nil;
+    self.data = nil;
+    self.completion = nil;
+}
+
+@end
+

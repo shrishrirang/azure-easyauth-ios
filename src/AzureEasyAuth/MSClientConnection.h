@@ -4,7 +4,6 @@
 
 #import <Foundation/Foundation.h>
 #import "MSBlockDefinitions.h"
-#import "MSSDKFeatures.h"
 
 @class MSClient;
 
@@ -33,17 +32,10 @@
 #pragma  mark * Public Initializer Methods
 
 
-// Initializes an |MSClientConnection| with the given client that sends the given
+// Initializes an |MSClientConnection| with the given client sends the given
 // request. NOTE: The request is not sent until |start| is called.
 -(id)initWithRequest:(NSURLRequest *)request
               client:(MSClient *)client
-          completion:(MSResponseBlock)completion;
-
-// Initializes an |MSClientConnection| with the given client that sends the given
-// request using certain MSFeatures.
--(id)initWithRequest:(NSURLRequest *)request
-              client:(MSClient *)client
-            features:(MSFeatures)features
           completion:(MSResponseBlock)completion;
 
 
@@ -69,9 +61,9 @@
 // Reads the content of the response using the client's serializer. Returns
 // and error if there is a failure during deserialization of the content.
 -(id) itemFromData:(NSData *)data
-            response:(NSHTTPURLResponse *)response
-            ensureDictionary:(BOOL)ensureDictionary
-            orError:(NSError **)error;
+          response:(NSHTTPURLResponse *)response
+  ensureDictionary:(BOOL)ensureDictionary
+           orError:(NSError **)error;
 
 // Given an error, adds the connection's request and the optional response
 // to the error.
