@@ -314,7 +314,7 @@ static NSOperationQueue *delegateQueue;
 
 -(void) cleanup
 {
-    self.client = nil;
+//    self.client = nil; FIXME
     self.data = nil;
     self.completion = nil;
 }

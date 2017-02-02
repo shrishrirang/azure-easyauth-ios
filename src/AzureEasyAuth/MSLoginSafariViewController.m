@@ -28,12 +28,12 @@
 
 #pragma mark * Public Constructor Methods
 
-- (instancetype)initWithClient:(MSClient *)client
+- (instancetype)initWithBackendUrl:(NSString *)url
 {
     self = [super init];
     
     if (self) {
-        _client = client;
+        _backendUrl = [NSURL URLWithString:url];
     }
     
     return self;
@@ -109,7 +109,7 @@
                                                  urlScheme:urlScheme
                                                   animated:animated];
     
-    NSURL *loginURL = [MSLoginSafariViewControllerUtilities loginURLFromApplicationURL:nil //FIXME
+    NSURL *loginURL = [MSLoginSafariViewControllerUtilities loginURLFromApplicationURL:self.backendUrl
                                                                               provider:self.authState.provider
                                                                              urlScheme:urlScheme
                                                                             parameters:parameters
@@ -158,7 +158,7 @@
         
         if (authorizationCode) {
             
-            codeExchangeURL = [MSLoginSafariViewControllerUtilities codeExchangeURLFromApplicationURL:nil // FIXME self.client.applicationURL
+            codeExchangeURL = [MSLoginSafariViewControllerUtilities codeExchangeURLFromApplicationURL:self.backendUrl
                                                                      provider:self.authState.provider
                                                                      authorizationCode:authorizationCode
                                                                 codeVerifier:self.authState.codeVerifier];
@@ -220,7 +220,7 @@
     
     // Create the connection and start it
     MSClientConnection *connection = [[MSClientConnection alloc] initWithRequest:request
-                                                              client:self.client
+                                                              client:nil //self.client // FIXME
                                                               completion:responseCompletion];
     [connection start];
 }
