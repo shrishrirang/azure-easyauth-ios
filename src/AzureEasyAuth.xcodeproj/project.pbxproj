@@ -7,10 +7,78 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D0BC1C931E43AF2800AB6E98 /* MSAuthState.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C711E43AF2800AB6E98 /* MSAuthState.h */; };
+		D0BC1C941E43AF2800AB6E98 /* MSAuthState.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C721E43AF2800AB6E98 /* MSAuthState.m */; };
+		D0BC1C951E43AF2800AB6E98 /* MSBlockDefinitions.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C731E43AF2800AB6E98 /* MSBlockDefinitions.h */; };
+		D0BC1C961E43AF2800AB6E98 /* MSClientConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C741E43AF2800AB6E98 /* MSClientConnection.h */; };
+		D0BC1C971E43AF2800AB6E98 /* MSClientConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C751E43AF2800AB6E98 /* MSClientConnection.m */; };
+		D0BC1C981E43AF2800AB6E98 /* MSConnectionConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C761E43AF2800AB6E98 /* MSConnectionConfiguration.h */; };
+		D0BC1C991E43AF2800AB6E98 /* MSConnectionConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C771E43AF2800AB6E98 /* MSConnectionConfiguration.m */; };
+		D0BC1C9A1E43AF2800AB6E98 /* MSDateOffset.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C781E43AF2800AB6E98 /* MSDateOffset.h */; };
+		D0BC1C9B1E43AF2800AB6E98 /* MSDateOffset.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C791E43AF2800AB6E98 /* MSDateOffset.m */; };
+		D0BC1C9C1E43AF2800AB6E98 /* MSError.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C7A1E43AF2800AB6E98 /* MSError.h */; };
+		D0BC1C9D1E43AF2800AB6E98 /* MSError.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C7B1E43AF2800AB6E98 /* MSError.m */; };
+		D0BC1C9E1E43AF2800AB6E98 /* MSFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C7C1E43AF2800AB6E98 /* MSFilter.h */; };
+		D0BC1C9F1E43AF2800AB6E98 /* MSJSONSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C7D1E43AF2800AB6E98 /* MSJSONSerializer.h */; };
+		D0BC1CA01E43AF2800AB6E98 /* MSJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C7E1E43AF2800AB6E98 /* MSJSONSerializer.m */; };
+		D0BC1CA11E43AF2800AB6E98 /* MSLoginSafariViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C7F1E43AF2800AB6E98 /* MSLoginSafariViewController.h */; };
+		D0BC1CA21E43AF2800AB6E98 /* MSLoginSafariViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C801E43AF2800AB6E98 /* MSLoginSafariViewController.m */; };
+		D0BC1CA31E43AF2800AB6E98 /* MSLoginSafariViewControllerUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C811E43AF2800AB6E98 /* MSLoginSafariViewControllerUtilities.h */; };
+		D0BC1CA41E43AF2800AB6E98 /* MSLoginSafariViewControllerUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C821E43AF2800AB6E98 /* MSLoginSafariViewControllerUtilities.m */; };
+		D0BC1CA51E43AF2800AB6E98 /* MSLoginSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C831E43AF2800AB6E98 /* MSLoginSerializer.h */; };
+		D0BC1CA61E43AF2800AB6E98 /* MSLoginSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C841E43AF2800AB6E98 /* MSLoginSerializer.m */; };
+		D0BC1CA71E43AF2800AB6E98 /* MSNaiveISODateFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C851E43AF2800AB6E98 /* MSNaiveISODateFormatter.h */; };
+		D0BC1CA81E43AF2800AB6E98 /* MSNaiveISODateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C861E43AF2800AB6E98 /* MSNaiveISODateFormatter.m */; };
+		D0BC1CA91E43AF2800AB6E98 /* MSPullSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C871E43AF2800AB6E98 /* MSPullSettings.h */; };
+		D0BC1CAA1E43AF2800AB6E98 /* MSPullSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C881E43AF2800AB6E98 /* MSPullSettings.m */; };
+		D0BC1CAB1E43AF2800AB6E98 /* MSPullSettingsInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C891E43AF2800AB6E98 /* MSPullSettingsInternal.h */; };
+		D0BC1CAC1E43AF2800AB6E98 /* MSSDKFeatures.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C8A1E43AF2800AB6E98 /* MSSDKFeatures.h */; };
+		D0BC1CAD1E43AF2800AB6E98 /* MSSDKFeatures.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C8B1E43AF2800AB6E98 /* MSSDKFeatures.m */; };
+		D0BC1CAE1E43AF2800AB6E98 /* MSSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C8C1E43AF2800AB6E98 /* MSSerializer.h */; };
+		D0BC1CAF1E43AF2800AB6E98 /* MSURLBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C8D1E43AF2800AB6E98 /* MSURLBuilder.h */; };
+		D0BC1CB01E43AF2800AB6E98 /* MSURLBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C8E1E43AF2800AB6E98 /* MSURLBuilder.m */; };
+		D0BC1CB11E43AF2800AB6E98 /* MSUser.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C8F1E43AF2800AB6E98 /* MSUser.h */; };
+		D0BC1CB21E43AF2800AB6E98 /* MSUser.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C901E43AF2800AB6E98 /* MSUser.m */; };
+		D0BC1CB31E43AF2800AB6E98 /* MSUserAgentBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C911E43AF2800AB6E98 /* MSUserAgentBuilder.h */; };
+		D0BC1CB41E43AF2800AB6E98 /* MSUserAgentBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C921E43AF2800AB6E98 /* MSUserAgentBuilder.m */; };
 		D0F6B1921E43A97D008A1FDB /* AzureEasyAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = D0F6B1901E43A97D008A1FDB /* AzureEasyAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D0BC1C711E43AF2800AB6E98 /* MSAuthState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSAuthState.h; sourceTree = "<group>"; };
+		D0BC1C721E43AF2800AB6E98 /* MSAuthState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSAuthState.m; sourceTree = "<group>"; };
+		D0BC1C731E43AF2800AB6E98 /* MSBlockDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSBlockDefinitions.h; sourceTree = "<group>"; };
+		D0BC1C741E43AF2800AB6E98 /* MSClientConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSClientConnection.h; sourceTree = "<group>"; };
+		D0BC1C751E43AF2800AB6E98 /* MSClientConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSClientConnection.m; sourceTree = "<group>"; };
+		D0BC1C761E43AF2800AB6E98 /* MSConnectionConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSConnectionConfiguration.h; sourceTree = "<group>"; };
+		D0BC1C771E43AF2800AB6E98 /* MSConnectionConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSConnectionConfiguration.m; sourceTree = "<group>"; };
+		D0BC1C781E43AF2800AB6E98 /* MSDateOffset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSDateOffset.h; sourceTree = "<group>"; };
+		D0BC1C791E43AF2800AB6E98 /* MSDateOffset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSDateOffset.m; sourceTree = "<group>"; };
+		D0BC1C7A1E43AF2800AB6E98 /* MSError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSError.h; sourceTree = "<group>"; };
+		D0BC1C7B1E43AF2800AB6E98 /* MSError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSError.m; sourceTree = "<group>"; };
+		D0BC1C7C1E43AF2800AB6E98 /* MSFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSFilter.h; sourceTree = "<group>"; };
+		D0BC1C7D1E43AF2800AB6E98 /* MSJSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSJSONSerializer.h; sourceTree = "<group>"; };
+		D0BC1C7E1E43AF2800AB6E98 /* MSJSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSJSONSerializer.m; sourceTree = "<group>"; };
+		D0BC1C7F1E43AF2800AB6E98 /* MSLoginSafariViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSLoginSafariViewController.h; sourceTree = "<group>"; };
+		D0BC1C801E43AF2800AB6E98 /* MSLoginSafariViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSLoginSafariViewController.m; sourceTree = "<group>"; };
+		D0BC1C811E43AF2800AB6E98 /* MSLoginSafariViewControllerUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSLoginSafariViewControllerUtilities.h; sourceTree = "<group>"; };
+		D0BC1C821E43AF2800AB6E98 /* MSLoginSafariViewControllerUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSLoginSafariViewControllerUtilities.m; sourceTree = "<group>"; };
+		D0BC1C831E43AF2800AB6E98 /* MSLoginSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSLoginSerializer.h; sourceTree = "<group>"; };
+		D0BC1C841E43AF2800AB6E98 /* MSLoginSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSLoginSerializer.m; sourceTree = "<group>"; };
+		D0BC1C851E43AF2800AB6E98 /* MSNaiveISODateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSNaiveISODateFormatter.h; sourceTree = "<group>"; };
+		D0BC1C861E43AF2800AB6E98 /* MSNaiveISODateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSNaiveISODateFormatter.m; sourceTree = "<group>"; };
+		D0BC1C871E43AF2800AB6E98 /* MSPullSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSPullSettings.h; sourceTree = "<group>"; };
+		D0BC1C881E43AF2800AB6E98 /* MSPullSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSPullSettings.m; sourceTree = "<group>"; };
+		D0BC1C891E43AF2800AB6E98 /* MSPullSettingsInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSPullSettingsInternal.h; sourceTree = "<group>"; };
+		D0BC1C8A1E43AF2800AB6E98 /* MSSDKFeatures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSDKFeatures.h; sourceTree = "<group>"; };
+		D0BC1C8B1E43AF2800AB6E98 /* MSSDKFeatures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSDKFeatures.m; sourceTree = "<group>"; };
+		D0BC1C8C1E43AF2800AB6E98 /* MSSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSerializer.h; sourceTree = "<group>"; };
+		D0BC1C8D1E43AF2800AB6E98 /* MSURLBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSURLBuilder.h; sourceTree = "<group>"; };
+		D0BC1C8E1E43AF2800AB6E98 /* MSURLBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSURLBuilder.m; sourceTree = "<group>"; };
+		D0BC1C8F1E43AF2800AB6E98 /* MSUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSUser.h; sourceTree = "<group>"; };
+		D0BC1C901E43AF2800AB6E98 /* MSUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSUser.m; sourceTree = "<group>"; };
+		D0BC1C911E43AF2800AB6E98 /* MSUserAgentBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSUserAgentBuilder.h; sourceTree = "<group>"; };
+		D0BC1C921E43AF2800AB6E98 /* MSUserAgentBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSUserAgentBuilder.m; sourceTree = "<group>"; };
 		D0F6B18D1E43A97D008A1FDB /* AzureEasyAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AzureEasyAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0F6B1901E43A97D008A1FDB /* AzureEasyAuth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AzureEasyAuth.h; sourceTree = "<group>"; };
 		D0F6B1911E43A97D008A1FDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,6 +114,40 @@
 		D0F6B18F1E43A97D008A1FDB /* AzureEasyAuth */ = {
 			isa = PBXGroup;
 			children = (
+				D0BC1C711E43AF2800AB6E98 /* MSAuthState.h */,
+				D0BC1C721E43AF2800AB6E98 /* MSAuthState.m */,
+				D0BC1C731E43AF2800AB6E98 /* MSBlockDefinitions.h */,
+				D0BC1C741E43AF2800AB6E98 /* MSClientConnection.h */,
+				D0BC1C751E43AF2800AB6E98 /* MSClientConnection.m */,
+				D0BC1C761E43AF2800AB6E98 /* MSConnectionConfiguration.h */,
+				D0BC1C771E43AF2800AB6E98 /* MSConnectionConfiguration.m */,
+				D0BC1C781E43AF2800AB6E98 /* MSDateOffset.h */,
+				D0BC1C791E43AF2800AB6E98 /* MSDateOffset.m */,
+				D0BC1C7A1E43AF2800AB6E98 /* MSError.h */,
+				D0BC1C7B1E43AF2800AB6E98 /* MSError.m */,
+				D0BC1C7C1E43AF2800AB6E98 /* MSFilter.h */,
+				D0BC1C7D1E43AF2800AB6E98 /* MSJSONSerializer.h */,
+				D0BC1C7E1E43AF2800AB6E98 /* MSJSONSerializer.m */,
+				D0BC1C7F1E43AF2800AB6E98 /* MSLoginSafariViewController.h */,
+				D0BC1C801E43AF2800AB6E98 /* MSLoginSafariViewController.m */,
+				D0BC1C811E43AF2800AB6E98 /* MSLoginSafariViewControllerUtilities.h */,
+				D0BC1C821E43AF2800AB6E98 /* MSLoginSafariViewControllerUtilities.m */,
+				D0BC1C831E43AF2800AB6E98 /* MSLoginSerializer.h */,
+				D0BC1C841E43AF2800AB6E98 /* MSLoginSerializer.m */,
+				D0BC1C851E43AF2800AB6E98 /* MSNaiveISODateFormatter.h */,
+				D0BC1C861E43AF2800AB6E98 /* MSNaiveISODateFormatter.m */,
+				D0BC1C871E43AF2800AB6E98 /* MSPullSettings.h */,
+				D0BC1C881E43AF2800AB6E98 /* MSPullSettings.m */,
+				D0BC1C891E43AF2800AB6E98 /* MSPullSettingsInternal.h */,
+				D0BC1C8A1E43AF2800AB6E98 /* MSSDKFeatures.h */,
+				D0BC1C8B1E43AF2800AB6E98 /* MSSDKFeatures.m */,
+				D0BC1C8C1E43AF2800AB6E98 /* MSSerializer.h */,
+				D0BC1C8D1E43AF2800AB6E98 /* MSURLBuilder.h */,
+				D0BC1C8E1E43AF2800AB6E98 /* MSURLBuilder.m */,
+				D0BC1C8F1E43AF2800AB6E98 /* MSUser.h */,
+				D0BC1C901E43AF2800AB6E98 /* MSUser.m */,
+				D0BC1C911E43AF2800AB6E98 /* MSUserAgentBuilder.h */,
+				D0BC1C921E43AF2800AB6E98 /* MSUserAgentBuilder.m */,
 				D0F6B1901E43A97D008A1FDB /* AzureEasyAuth.h */,
 				D0F6B1911E43A97D008A1FDB /* Info.plist */,
 			);
@@ -59,7 +161,26 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0BC1C9C1E43AF2800AB6E98 /* MSError.h in Headers */,
+				D0BC1CA71E43AF2800AB6E98 /* MSNaiveISODateFormatter.h in Headers */,
+				D0BC1C931E43AF2800AB6E98 /* MSAuthState.h in Headers */,
+				D0BC1C961E43AF2800AB6E98 /* MSClientConnection.h in Headers */,
+				D0BC1CA91E43AF2800AB6E98 /* MSPullSettings.h in Headers */,
 				D0F6B1921E43A97D008A1FDB /* AzureEasyAuth.h in Headers */,
+				D0BC1CAC1E43AF2800AB6E98 /* MSSDKFeatures.h in Headers */,
+				D0BC1CAE1E43AF2800AB6E98 /* MSSerializer.h in Headers */,
+				D0BC1CA51E43AF2800AB6E98 /* MSLoginSerializer.h in Headers */,
+				D0BC1C9A1E43AF2800AB6E98 /* MSDateOffset.h in Headers */,
+				D0BC1C981E43AF2800AB6E98 /* MSConnectionConfiguration.h in Headers */,
+				D0BC1CB31E43AF2800AB6E98 /* MSUserAgentBuilder.h in Headers */,
+				D0BC1CA31E43AF2800AB6E98 /* MSLoginSafariViewControllerUtilities.h in Headers */,
+				D0BC1C9E1E43AF2800AB6E98 /* MSFilter.h in Headers */,
+				D0BC1CA11E43AF2800AB6E98 /* MSLoginSafariViewController.h in Headers */,
+				D0BC1CAB1E43AF2800AB6E98 /* MSPullSettingsInternal.h in Headers */,
+				D0BC1C9F1E43AF2800AB6E98 /* MSJSONSerializer.h in Headers */,
+				D0BC1CB11E43AF2800AB6E98 /* MSUser.h in Headers */,
+				D0BC1CAF1E43AF2800AB6E98 /* MSURLBuilder.h in Headers */,
+				D0BC1C951E43AF2800AB6E98 /* MSBlockDefinitions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +252,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0BC1C971E43AF2800AB6E98 /* MSClientConnection.m in Sources */,
+				D0BC1CA21E43AF2800AB6E98 /* MSLoginSafariViewController.m in Sources */,
+				D0BC1C9D1E43AF2800AB6E98 /* MSError.m in Sources */,
+				D0BC1CAD1E43AF2800AB6E98 /* MSSDKFeatures.m in Sources */,
+				D0BC1CB21E43AF2800AB6E98 /* MSUser.m in Sources */,
+				D0BC1CA41E43AF2800AB6E98 /* MSLoginSafariViewControllerUtilities.m in Sources */,
+				D0BC1CB41E43AF2800AB6E98 /* MSUserAgentBuilder.m in Sources */,
+				D0BC1CA61E43AF2800AB6E98 /* MSLoginSerializer.m in Sources */,
+				D0BC1C941E43AF2800AB6E98 /* MSAuthState.m in Sources */,
+				D0BC1CA81E43AF2800AB6E98 /* MSNaiveISODateFormatter.m in Sources */,
+				D0BC1C9B1E43AF2800AB6E98 /* MSDateOffset.m in Sources */,
+				D0BC1CB01E43AF2800AB6E98 /* MSURLBuilder.m in Sources */,
+				D0BC1C991E43AF2800AB6E98 /* MSConnectionConfiguration.m in Sources */,
+				D0BC1CAA1E43AF2800AB6E98 /* MSPullSettings.m in Sources */,
+				D0BC1CA01E43AF2800AB6E98 /* MSJSONSerializer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +422,7 @@
 				D0F6B1971E43A97D008A1FDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
