@@ -6,6 +6,21 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		D097887B1E4CDF2E00A2B42E /* AzureEasyAuthUniversalFramework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D097887C1E4CDF2E00A2B42E /* Build configuration list for PBXAggregateTarget "AzureEasyAuthUniversalFramework" */;
+			buildPhases = (
+				D09788811E4CDF3900A2B42E /* ShellScript */,
+			);
+			dependencies = (
+				D09788801E4CDF3500A2B42E /* PBXTargetDependency */,
+			);
+			name = AzureEasyAuthUniversalFramework;
+			productName = AzureEasyAuthUniversalFramework;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		D04E5AE21E4CD64C00159A2A /* MSAuthState.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C721E43AF2800AB6E98 /* MSAuthState.m */; };
 		D04E5AE51E4CD64C00159A2A /* MSClientConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C751E43AF2800AB6E98 /* MSClientConnection.m */; };
@@ -78,6 +93,16 @@
 		D0BC1CB41E43AF2800AB6E98 /* MSUserAgentBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C921E43AF2800AB6E98 /* MSUserAgentBuilder.m */; };
 		D0F6B1921E43A97D008A1FDB /* AzureEasyAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = D0F6B1901E43A97D008A1FDB /* AzureEasyAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D097887F1E4CDF3500A2B42E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0F6B1841E43A97D008A1FDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D04E5AD71E4CD5FD00159A2A;
+			remoteInfo = AzureEasyAuth;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		D04E5AD61E4CD5FD00159A2A /* CopyFiles */ = {
@@ -320,6 +345,10 @@
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 					};
+					D097887B1E4CDF2E00A2B42E = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
 					D0F6B18C1E43A97D008A1FDB = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = KKNVUNX8DK;
@@ -341,6 +370,7 @@
 			targets = (
 				D0F6B18C1E43A97D008A1FDB /* AzureEasyAuthDynamicFramework */,
 				D04E5AD71E4CD5FD00159A2A /* AzureEasyAuth */,
+				D097887B1E4CDF2E00A2B42E /* AzureEasyAuthUniversalFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -368,6 +398,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Exit immediately on any errors\nset -e\n\n# Set some variables\nOUTPUT=${BUILT_PRODUCTS_DIR}\nEASYAUTH=\"AzureEasyAuth\"\nEASYAUTH_FRAMEWORK=\"${EASYAUTH}.framework\"\nEASYAUTH_LIB=\"lib${EASYAUTH}.a\"\nHEADERS=\"Headers\"\n\n# Create the needed directories for the framework\nmkdir -p \"${OUTPUT}/${EASYAUTH_FRAMEWORK}/Versions/A\"\nmkdir -p \"${OUTPUT}/${EASYAUTH_FRAMEWORK}/Versions/A/Headers\"\n\n# Add the headers and lib to the framework\ncp -a \"${OUTPUT}/${HEADERS}/\" \"${OUTPUT}/${EASYAUTH_FRAMEWORK}/Versions/A/Headers\"\nlipo -create \"${OUTPUT}/${EASYAUTH_LIB}\" -output \"${OUTPUT}/${EASYAUTH_FRAMEWORK}/Versions/A/${EASYAUTH}\"\n\n# Set up the links to complete the framework\nln -sf Versions/Current/Headers \"${OUTPUT}/${EASYAUTH_FRAMEWORK}/Headers\"\nln -sf \"Versions/Current/${EASYAUTH}\" \"${OUTPUT}/${EASYAUTH_FRAMEWORK}/${EASYAUTH}\"\nln -sf A \"${OUTPUT}/${EASYAUTH_FRAMEWORK}/Versions/Current\"";
+		};
+		D09788811E4CDF3900A2B42E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\n# Don't call this script from this script\nif [[ ${EASYAUTH_BUILDING:0} ]]; then\nexit 0\nfi\nexport EASYAUTH_BUILDING=1\n\n# Set some variables\nOUTPUT=${BUILT_PRODUCTS_DIR}\nEASYAUTH=\"AzureEasyAuth\"\nEASYAUTH_FRAMEWORK=\"${EASYAUTH}.framework\"\nEASYAUTH_LIB=\"lib${EASYAUTH}.a\"\n\n# Determine whether device or simulator and the version of the SDK\nif [[ ! \"$SDK_NAME\" =~ ([A-Za-z]+)([0-9]+.*$) ]]; then\necho \"Unsupported SDK: $SDK-NAME\"\nexit 1\nfi\n\n# Determine the other (device/simulator) and arch\nif [[ ${BASH_REMATCH[1]} == \"iphoneos\" ]]; then\nOTHER_SDK=iphonesimulator${BASH_REMATCH[2]}\nOTHER_OUTPUT=${BUILD_DIR}/${CONFIGURATION}-iphonesimulator\nOTHER_TEMP_OUTPUT=${PROJECT_TEMP_DIR}/${CONFIGURATION}-iphonesimulator\nOTHER_ARCH=\"i386 x86_64\"\nelse\nOTHER_SDK=iphoneos${BASH_REMATCH[2]}\nOTHER_OUTPUT=${BUILD_DIR}/${CONFIGURATION}-iphoneos\nOTHER_TEMP_OUTPUT=${PROJECT_TEMP_DIR}/${CONFIGURATION}-iphoneos\nOTHER_ARCH=\"arm64 armv7 armv7s\"\nfi\n\n# Build the other library\nxcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${OTHER_SDK} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${OTHER_TEMP_OUTPUT}\" ARCHS=\"${OTHER_ARCH}\" $ACTION\n\n# Merge the libraries with lipo for both output dirs\nlipo -create \"${OUTPUT}/${EASYAUTH_LIB}\" \"${OTHER_OUTPUT}/${EASYAUTH_LIB}\" -output \"${OUTPUT}/${EASYAUTH_FRAMEWORK}/Versions/A/${EASYAUTH}\"\nlipo -create \"${OUTPUT}/${EASYAUTH_LIB}\" \"${OTHER_OUTPUT}/${EASYAUTH_LIB}\" -output \"${OTHER_OUTPUT}/${EASYAUTH_FRAMEWORK}/Versions/A/${EASYAUTH}\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -418,6 +461,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		D09788801E4CDF3500A2B42E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D04E5AD71E4CD5FD00159A2A /* AzureEasyAuth */;
+			targetProxy = D097887F1E4CDF3500A2B42E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
 		D04E5ADE1E4CD5FD00159A2A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -438,6 +489,20 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = headers;
 				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D097887D1E4CDF2E00A2B42E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D097887E1E4CDF2E00A2B42E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -582,6 +647,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		D097887C1E4CDF2E00A2B42E /* Build configuration list for PBXAggregateTarget "AzureEasyAuthUniversalFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D097887D1E4CDF2E00A2B42E /* Debug */,
+				D097887E1E4CDF2E00A2B42E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		D0F6B1871E43A97D008A1FDB /* Build configuration list for PBXProject "AzureEasyAuth" */ = {
 			isa = XCConfigurationList;
