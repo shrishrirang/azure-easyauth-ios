@@ -7,6 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D04E5AE21E4CD64C00159A2A /* MSAuthState.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C721E43AF2800AB6E98 /* MSAuthState.m */; };
+		D04E5AE51E4CD64C00159A2A /* MSClientConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C751E43AF2800AB6E98 /* MSClientConnection.m */; };
+		D04E5AE71E4CD64C00159A2A /* MSConnectionConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C771E43AF2800AB6E98 /* MSConnectionConfiguration.m */; };
+		D04E5AE91E4CD64C00159A2A /* MSDateOffset.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C791E43AF2800AB6E98 /* MSDateOffset.m */; };
+		D04E5AEB1E4CD64C00159A2A /* MSError.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C7B1E43AF2800AB6E98 /* MSError.m */; };
+		D04E5AEE1E4CD64C00159A2A /* MSJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C7E1E43AF2800AB6E98 /* MSJSONSerializer.m */; };
+		D04E5AF01E4CD64C00159A2A /* MSLoginSafariViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C801E43AF2800AB6E98 /* MSLoginSafariViewController.m */; };
+		D04E5AF21E4CD64C00159A2A /* MSLoginSafariViewControllerUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C821E43AF2800AB6E98 /* MSLoginSafariViewControllerUtilities.m */; };
+		D04E5AF41E4CD64C00159A2A /* MSLoginSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C841E43AF2800AB6E98 /* MSLoginSerializer.m */; };
+		D04E5AF61E4CD64C00159A2A /* MSNaiveISODateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C861E43AF2800AB6E98 /* MSNaiveISODateFormatter.m */; };
+		D04E5AF81E4CD64C00159A2A /* MSPullSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C881E43AF2800AB6E98 /* MSPullSettings.m */; };
+		D04E5AFB1E4CD64C00159A2A /* MSSDKFeatures.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C8B1E43AF2800AB6E98 /* MSSDKFeatures.m */; };
+		D04E5AFE1E4CD64C00159A2A /* MSURLBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C8E1E43AF2800AB6E98 /* MSURLBuilder.m */; };
+		D04E5B021E4CD64C00159A2A /* MSUserAgentBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C921E43AF2800AB6E98 /* MSUserAgentBuilder.m */; };
+		D04E5B031E4CD67400159A2A /* MSUser.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C901E43AF2800AB6E98 /* MSUser.m */; };
+		D04E5B051E4CD68600159A2A /* MSAuthState.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C711E43AF2800AB6E98 /* MSAuthState.h */; };
+		D04E5B061E4CD68600159A2A /* MSBlockDefinitions.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C731E43AF2800AB6E98 /* MSBlockDefinitions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D04E5B071E4CD68600159A2A /* MSClientConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C741E43AF2800AB6E98 /* MSClientConnection.h */; };
+		D04E5B081E4CD68600159A2A /* MSConnectionConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C761E43AF2800AB6E98 /* MSConnectionConfiguration.h */; };
+		D04E5B091E4CD68600159A2A /* MSDateOffset.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C781E43AF2800AB6E98 /* MSDateOffset.h */; };
+		D04E5B0A1E4CD68600159A2A /* MSError.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C7A1E43AF2800AB6E98 /* MSError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D04E5B0B1E4CD68600159A2A /* MSFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C7C1E43AF2800AB6E98 /* MSFilter.h */; };
+		D04E5B0C1E4CD68600159A2A /* MSJSONSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C7D1E43AF2800AB6E98 /* MSJSONSerializer.h */; };
+		D04E5B0D1E4CD68600159A2A /* MSLoginSafariViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C7F1E43AF2800AB6E98 /* MSLoginSafariViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D04E5B0E1E4CD68600159A2A /* MSLoginSafariViewControllerUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C811E43AF2800AB6E98 /* MSLoginSafariViewControllerUtilities.h */; };
+		D04E5B0F1E4CD68600159A2A /* MSLoginSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C831E43AF2800AB6E98 /* MSLoginSerializer.h */; };
+		D04E5B101E4CD68600159A2A /* MSNaiveISODateFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C851E43AF2800AB6E98 /* MSNaiveISODateFormatter.h */; };
+		D04E5B111E4CD68600159A2A /* MSPullSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C871E43AF2800AB6E98 /* MSPullSettings.h */; };
+		D04E5B121E4CD68600159A2A /* MSPullSettingsInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C891E43AF2800AB6E98 /* MSPullSettingsInternal.h */; };
+		D04E5B131E4CD68600159A2A /* MSSDKFeatures.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C8A1E43AF2800AB6E98 /* MSSDKFeatures.h */; };
+		D04E5B141E4CD68600159A2A /* MSSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C8C1E43AF2800AB6E98 /* MSSerializer.h */; };
+		D04E5B151E4CD68600159A2A /* MSURLBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C8D1E43AF2800AB6E98 /* MSURLBuilder.h */; };
+		D04E5B161E4CD68600159A2A /* MSUser.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C8F1E43AF2800AB6E98 /* MSUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D04E5B171E4CD68600159A2A /* MSUserAgentBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C911E43AF2800AB6E98 /* MSUserAgentBuilder.h */; };
+		D04E5B181E4CD68600159A2A /* AzureEasyAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = D0F6B1901E43A97D008A1FDB /* AzureEasyAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0BC1C931E43AF2800AB6E98 /* MSAuthState.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C711E43AF2800AB6E98 /* MSAuthState.h */; };
 		D0BC1C941E43AF2800AB6E98 /* MSAuthState.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1C721E43AF2800AB6E98 /* MSAuthState.m */; };
 		D0BC1C951E43AF2800AB6E98 /* MSBlockDefinitions.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BC1C731E43AF2800AB6E98 /* MSBlockDefinitions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -44,7 +79,20 @@
 		D0F6B1921E43A97D008A1FDB /* AzureEasyAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = D0F6B1901E43A97D008A1FDB /* AzureEasyAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D04E5AD61E4CD5FD00159A2A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		D04E5AD81E4CD5FD00159A2A /* libAzureEasyAuth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAzureEasyAuth.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0BC1C711E43AF2800AB6E98 /* MSAuthState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSAuthState.h; sourceTree = "<group>"; };
 		D0BC1C721E43AF2800AB6E98 /* MSAuthState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSAuthState.m; sourceTree = "<group>"; };
 		D0BC1C731E43AF2800AB6E98 /* MSBlockDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSBlockDefinitions.h; sourceTree = "<group>"; };
@@ -79,12 +127,19 @@
 		D0BC1C901E43AF2800AB6E98 /* MSUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSUser.m; sourceTree = "<group>"; };
 		D0BC1C911E43AF2800AB6E98 /* MSUserAgentBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSUserAgentBuilder.h; sourceTree = "<group>"; };
 		D0BC1C921E43AF2800AB6E98 /* MSUserAgentBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSUserAgentBuilder.m; sourceTree = "<group>"; };
-		D0F6B18D1E43A97D008A1FDB /* AzureEasyAuth.Framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AzureEasyAuth.Framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0F6B18D1E43A97D008A1FDB /* AzureEasyAuth.Framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AzureEasyAuth.Framework; path = AzureEasyAuthDynamicFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0F6B1901E43A97D008A1FDB /* AzureEasyAuth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AzureEasyAuth.h; sourceTree = "<group>"; };
 		D0F6B1911E43A97D008A1FDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D04E5AD51E4CD5FD00159A2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D0F6B1891E43A97D008A1FDB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -98,7 +153,7 @@
 		D0F6B1831E43A97D008A1FDB = {
 			isa = PBXGroup;
 			children = (
-				D0F6B18F1E43A97D008A1FDB /* AzureEasyAuthDynamicFramework */,
+				D0F6B18F1E43A97D008A1FDB /* AzureEasyAuth */,
 				D0F6B18E1E43A97D008A1FDB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -107,11 +162,12 @@
 			isa = PBXGroup;
 			children = (
 				D0F6B18D1E43A97D008A1FDB /* AzureEasyAuth.Framework */,
+				D04E5AD81E4CD5FD00159A2A /* libAzureEasyAuth.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D0F6B18F1E43A97D008A1FDB /* AzureEasyAuthDynamicFramework */ = {
+		D0F6B18F1E43A97D008A1FDB /* AzureEasyAuth */ = {
 			isa = PBXGroup;
 			children = (
 				D0BC1C711E43AF2800AB6E98 /* MSAuthState.h */,
@@ -157,6 +213,33 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		D04E5B041E4CD67C00159A2A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D04E5B181E4CD68600159A2A /* AzureEasyAuth.h in Headers */,
+				D04E5B061E4CD68600159A2A /* MSBlockDefinitions.h in Headers */,
+				D04E5B0A1E4CD68600159A2A /* MSError.h in Headers */,
+				D04E5B0D1E4CD68600159A2A /* MSLoginSafariViewController.h in Headers */,
+				D04E5B161E4CD68600159A2A /* MSUser.h in Headers */,
+				D04E5B051E4CD68600159A2A /* MSAuthState.h in Headers */,
+				D04E5B071E4CD68600159A2A /* MSClientConnection.h in Headers */,
+				D04E5B081E4CD68600159A2A /* MSConnectionConfiguration.h in Headers */,
+				D04E5B091E4CD68600159A2A /* MSDateOffset.h in Headers */,
+				D04E5B0B1E4CD68600159A2A /* MSFilter.h in Headers */,
+				D04E5B0C1E4CD68600159A2A /* MSJSONSerializer.h in Headers */,
+				D04E5B0E1E4CD68600159A2A /* MSLoginSafariViewControllerUtilities.h in Headers */,
+				D04E5B0F1E4CD68600159A2A /* MSLoginSerializer.h in Headers */,
+				D04E5B101E4CD68600159A2A /* MSNaiveISODateFormatter.h in Headers */,
+				D04E5B111E4CD68600159A2A /* MSPullSettings.h in Headers */,
+				D04E5B121E4CD68600159A2A /* MSPullSettingsInternal.h in Headers */,
+				D04E5B131E4CD68600159A2A /* MSSDKFeatures.h in Headers */,
+				D04E5B141E4CD68600159A2A /* MSSerializer.h in Headers */,
+				D04E5B151E4CD68600159A2A /* MSURLBuilder.h in Headers */,
+				D04E5B171E4CD68600159A2A /* MSUserAgentBuilder.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D0F6B18A1E43A97D008A1FDB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -187,6 +270,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		D04E5AD71E4CD5FD00159A2A /* AzureEasyAuth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D04E5AE01E4CD5FD00159A2A /* Build configuration list for PBXNativeTarget "AzureEasyAuth" */;
+			buildPhases = (
+				D04E5AD41E4CD5FD00159A2A /* Sources */,
+				D04E5AD51E4CD5FD00159A2A /* Frameworks */,
+				D04E5AD61E4CD5FD00159A2A /* CopyFiles */,
+				D04E5B041E4CD67C00159A2A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AzureEasyAuth;
+			productName = AzureEasyAuth;
+			productReference = D04E5AD81E4CD5FD00159A2A /* libAzureEasyAuth.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		D0F6B18C1E43A97D008A1FDB /* AzureEasyAuthDynamicFramework */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0F6B1951E43A97D008A1FDB /* Build configuration list for PBXNativeTarget "AzureEasyAuthDynamicFramework" */;
@@ -214,6 +315,10 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = OfflineSync;
 				TargetAttributes = {
+					D04E5AD71E4CD5FD00159A2A = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
 					D0F6B18C1E43A97D008A1FDB = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = KKNVUNX8DK;
@@ -221,7 +326,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D0F6B1871E43A97D008A1FDB /* Build configuration list for PBXProject "AzureEasyAuthDynamicFramework" */;
+			buildConfigurationList = D0F6B1871E43A97D008A1FDB /* Build configuration list for PBXProject "AzureEasyAuth" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -234,6 +339,7 @@
 			projectRoot = "";
 			targets = (
 				D0F6B18C1E43A97D008A1FDB /* AzureEasyAuthDynamicFramework */,
+				D04E5AD71E4CD5FD00159A2A /* AzureEasyAuth */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +355,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D04E5AD41E4CD5FD00159A2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D04E5B031E4CD67400159A2A /* MSUser.m in Sources */,
+				D04E5AE21E4CD64C00159A2A /* MSAuthState.m in Sources */,
+				D04E5AE51E4CD64C00159A2A /* MSClientConnection.m in Sources */,
+				D04E5AE71E4CD64C00159A2A /* MSConnectionConfiguration.m in Sources */,
+				D04E5AE91E4CD64C00159A2A /* MSDateOffset.m in Sources */,
+				D04E5AEB1E4CD64C00159A2A /* MSError.m in Sources */,
+				D04E5AEE1E4CD64C00159A2A /* MSJSONSerializer.m in Sources */,
+				D04E5AF01E4CD64C00159A2A /* MSLoginSafariViewController.m in Sources */,
+				D04E5AF21E4CD64C00159A2A /* MSLoginSafariViewControllerUtilities.m in Sources */,
+				D04E5AF41E4CD64C00159A2A /* MSLoginSerializer.m in Sources */,
+				D04E5AF61E4CD64C00159A2A /* MSNaiveISODateFormatter.m in Sources */,
+				D04E5AF81E4CD64C00159A2A /* MSPullSettings.m in Sources */,
+				D04E5AFB1E4CD64C00159A2A /* MSSDKFeatures.m in Sources */,
+				D04E5AFE1E4CD64C00159A2A /* MSURLBuilder.m in Sources */,
+				D04E5B021E4CD64C00159A2A /* MSUserAgentBuilder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D0F6B1881E43A97D008A1FDB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -274,6 +402,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		D04E5ADE1E4CD5FD00159A2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D04E5ADF1E4CD5FD00159A2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		D0F6B1931E43A97D008A1FDB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -407,7 +555,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D0F6B1871E43A97D008A1FDB /* Build configuration list for PBXProject "AzureEasyAuthDynamicFramework" */ = {
+		D04E5AE01E4CD5FD00159A2A /* Build configuration list for PBXNativeTarget "AzureEasyAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D04E5ADE1E4CD5FD00159A2A /* Debug */,
+				D04E5ADF1E4CD5FD00159A2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D0F6B1871E43A97D008A1FDB /* Build configuration list for PBXProject "AzureEasyAuth" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D0F6B1931E43A97D008A1FDB /* Debug */,
