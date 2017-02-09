@@ -276,8 +276,9 @@
 			buildPhases = (
 				D04E5AD41E4CD5FD00159A2A /* Sources */,
 				D04E5AD51E4CD5FD00159A2A /* Frameworks */,
-				D04E5AD61E4CD5FD00159A2A /* CopyFiles */,
 				D04E5B041E4CD67C00159A2A /* Headers */,
+				D04E5AD61E4CD5FD00159A2A /* CopyFiles */,
+				D097887A1E4CDE1C00A2B42E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -354,6 +355,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D097887A1E4CDE1C00A2B42E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Exit immediately on any errors\nset -e\n\n# Set some variables\nOUTPUT=${BUILT_PRODUCTS_DIR}\nEASYAUTH=\"AzureEasyAuth\"\nEASYAUTH_FRAMEWORK=\"${EASYAUTH}.framework\"\nEASYAUTH_LIB=\"lib${EASYAUTH}.a\"\nHEADERS=\"Headers\"\n\n# Create the needed directories for the framework\nmkdir -p \"${OUTPUT}/${EASYAUTH_FRAMEWORK}/Versions/A\"\nmkdir -p \"${OUTPUT}/${EASYAUTH_FRAMEWORK}/Versions/A/Headers\"\n\n# Add the headers and lib to the framework\ncp -a \"${OUTPUT}/${HEADERS}/\" \"${OUTPUT}/${EASYAUTH_FRAMEWORK}/Versions/A/Headers\"\nlipo -create \"${OUTPUT}/${EASYAUTH_LIB}\" -output \"${OUTPUT}/${EASYAUTH_FRAMEWORK}/Versions/A/${EASYAUTH}\"\n\n# Set up the links to complete the framework\nln -sf Versions/Current/Headers \"${OUTPUT}/${EASYAUTH_FRAMEWORK}/Headers\"\nln -sf \"Versions/Current/${EASYAUTH}\" \"${OUTPUT}/${EASYAUTH_FRAMEWORK}/${EASYAUTH}\"\nln -sf A \"${OUTPUT}/${EASYAUTH_FRAMEWORK}/Versions/Current\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D04E5AD41E4CD5FD00159A2A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -408,6 +425,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = headers;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -418,6 +436,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = headers;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -562,6 +581,7 @@
 				D04E5ADF1E4CD5FD00159A2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D0F6B1871E43A97D008A1FDB /* Build configuration list for PBXProject "AzureEasyAuth" */ = {
 			isa = XCConfigurationList;
