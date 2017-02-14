@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:demo/AzureEasyAuthDemo.xcodeproj">
+      location = "group:src/AzureEasyAuth.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:src/AzureEasyAuth.xcodeproj">
+      location = "group:demo/AzureEasyAuthDemo.xcodeproj">
    </FileRef>
 </Workspace>

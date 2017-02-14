@@ -152,7 +152,7 @@
 		D0BC1C901E43AF2800AB6E98 /* MSUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSUser.m; sourceTree = "<group>"; };
 		D0BC1C911E43AF2800AB6E98 /* MSUserAgentBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSUserAgentBuilder.h; sourceTree = "<group>"; };
 		D0BC1C921E43AF2800AB6E98 /* MSUserAgentBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSUserAgentBuilder.m; sourceTree = "<group>"; };
-		D0F6B18D1E43A97D008A1FDB /* AzureEasyAuth.Framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AzureEasyAuth.Framework; path = AzureEasyAuthDynamicFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0F6B18D1E43A97D008A1FDB /* AzureEasyAuthDynamicFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AzureEasyAuthDynamicFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0F6B1901E43A97D008A1FDB /* AzureEasyAuth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AzureEasyAuth.h; sourceTree = "<group>"; };
 		D0F6B1911E43A97D008A1FDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -186,7 +186,7 @@
 		D0F6B18E1E43A97D008A1FDB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D0F6B18D1E43A97D008A1FDB /* AzureEasyAuth.Framework */,
+				D0F6B18D1E43A97D008A1FDB /* AzureEasyAuthDynamicFramework.framework */,
 				D04E5AD81E4CD5FD00159A2A /* libAzureEasyAuth.a */,
 			);
 			name = Products;
@@ -329,7 +329,7 @@
 			);
 			name = AzureEasyAuthDynamicFramework;
 			productName = AzureEasyAuthDynamicFramework;
-			productReference = D0F6B18D1E43A97D008A1FDB /* AzureEasyAuth.Framework */;
+			productReference = D0F6B18D1E43A97D008A1FDB /* AzureEasyAuthDynamicFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -339,7 +339,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0820;
-				ORGANIZATIONNAME = OfflineSync;
+				ORGANIZATIONNAME = "Microsoft Corporation";
 				TargetAttributes = {
 					D04E5AD71E4CD5FD00159A2A = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -351,7 +351,6 @@
 					};
 					D0F6B18C1E43A97D008A1FDB = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = KKNVUNX8DK;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -607,6 +606,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -624,6 +624,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -655,6 +656,7 @@
 				D097887E1E4CDF2E00A2B42E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D0F6B1871E43A97D008A1FDB /* Build configuration list for PBXProject "AzureEasyAuth" */ = {
 			isa = XCConfigurationList;

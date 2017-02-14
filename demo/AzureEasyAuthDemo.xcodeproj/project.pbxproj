@@ -7,32 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D018278E1E43FD03005D9CCB /* AzureEasyAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D018278D1E43FD03005D9CCB /* AzureEasyAuth.framework */; };
-		D018278F1E43FD03005D9CCB /* AzureEasyAuth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D018278D1E43FD03005D9CCB /* AzureEasyAuth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D0BC1CE61E43B26D00AB6E98 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1CE51E43B26D00AB6E98 /* main.m */; };
 		D0BC1CE91E43B26D00AB6E98 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1CE81E43B26D00AB6E98 /* AppDelegate.m */; };
 		D0BC1CEC1E43B26D00AB6E98 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC1CEB1E43B26D00AB6E98 /* ViewController.m */; };
 		D0BC1CEF1E43B26D00AB6E98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0BC1CED1E43B26D00AB6E98 /* Main.storyboard */; };
 		D0BC1CF11E43B26D00AB6E98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0BC1CF01E43B26D00AB6E98 /* Assets.xcassets */; };
 		D0BC1CF41E43B26D00AB6E98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0BC1CF21E43B26D00AB6E98 /* LaunchScreen.storyboard */; };
+		D0C355981E536BB9002390E7 /* libAzureEasyAuth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A3F85E1E536B0E0033C7AB /* libAzureEasyAuth.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		D01827901E43FD03005D9CCB /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				D018278F1E43FD03005D9CCB /* AzureEasyAuth.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D018278D1E43FD03005D9CCB /* AzureEasyAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AzureEasyAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0A3F85E1E536B0E0033C7AB /* libAzureEasyAuth.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAzureEasyAuth.a; path = "../../../../../Library/Developer/Xcode/DerivedData/AzureEasyAuth-bdmictkngjqixeepoqkpjcukmvjz/Build/Products/Debug-iphonesimulator/libAzureEasyAuth.a"; sourceTree = "<group>"; };
 		D0BC1CE11E43B26D00AB6E98 /* AzureEasyAuthDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AzureEasyAuthDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0BC1CE51E43B26D00AB6E98 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D0BC1CE71E43B26D00AB6E98 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -43,6 +29,7 @@
 		D0BC1CF01E43B26D00AB6E98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0BC1CF31E43B26D00AB6E98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0BC1CF51E43B26D00AB6E98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0C355941E536B6B002390E7 /* AzureEasyAuthDynamicFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AzureEasyAuthDynamicFramework.framework; path = "../src/build/Debug-iphoneos/AzureEasyAuthDynamicFramework.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D018278E1E43FD03005D9CCB /* AzureEasyAuth.framework in Frameworks */,
+				D0C355981E536BB9002390E7 /* libAzureEasyAuth.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +47,8 @@
 		D018274D1E43C079005D9CCB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D0C355941E536B6B002390E7 /* AzureEasyAuthDynamicFramework.framework */,
+				D0A3F85E1E536B0E0033C7AB /* libAzureEasyAuth.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -116,7 +105,6 @@
 				D0BC1CDD1E43B26D00AB6E98 /* Sources */,
 				D0BC1CDE1E43B26D00AB6E98 /* Frameworks */,
 				D0BC1CDF1E43B26D00AB6E98 /* Resources */,
-				D01827901E43FD03005D9CCB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -138,7 +126,6 @@
 				TargetAttributes = {
 					D0BC1CE01E43B26D00AB6E98 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = KKNVUNX8DK;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -301,6 +288,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AzureEasyAuthDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.azure.easyauth.demo;
@@ -312,6 +300,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AzureEasyAuthDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.azure.easyauth.demo;
