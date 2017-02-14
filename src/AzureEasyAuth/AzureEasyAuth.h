@@ -1,10 +1,6 @@
-//
-//  AzureEasyAuth.h
-//  AzureEasyAuth
-//
-//  Created by Shrirang on 2/2/17.
-//  Copyright © 2017 OfflineSync. All rights reserved.
-//
+// ----------------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation. All rights reserved.
+// ----------------------------------------------------------------------------
 
 #import <UIKit/UIKit.h>
 
