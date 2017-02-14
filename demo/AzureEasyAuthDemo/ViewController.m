@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "AppDelegate.h"
-@import AzureEasyAuth;
+#import <AzureEasyAuth/AzureEasyAuth.h>
 
 @interface ViewController ()
 
