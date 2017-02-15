@@ -13,12 +13,34 @@
 		D0BC1CEF1E43B26D00AB6E98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0BC1CED1E43B26D00AB6E98 /* Main.storyboard */; };
 		D0BC1CF11E43B26D00AB6E98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0BC1CF01E43B26D00AB6E98 /* Assets.xcassets */; };
 		D0BC1CF41E43B26D00AB6E98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0BC1CF21E43B26D00AB6E98 /* LaunchScreen.storyboard */; };
-		D0C355981E536BB9002390E7 /* libAzureEasyAuth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A3F85E1E536B0E0033C7AB /* libAzureEasyAuth.a */; };
+		D0FB091C1E55095A006438B6 /* libAzureEasyAuth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FB09191E5508C7006438B6 /* libAzureEasyAuth.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D0FB09161E5508C7006438B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0FB09101E5508C7006438B6 /* AzureEasyAuth.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D0F6B18D1E43A97D008A1FDB;
+			remoteInfo = AzureEasyAuthDynamicFramework;
+		};
+		D0FB09181E5508C7006438B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0FB09101E5508C7006438B6 /* AzureEasyAuth.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D04E5AD81E4CD5FD00159A2A;
+			remoteInfo = AzureEasyAuth;
+		};
+		D0FB091A1E55094C006438B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0FB09101E5508C7006438B6 /* AzureEasyAuth.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D097887B1E4CDF2E00A2B42E;
+			remoteInfo = AzureEasyAuthUniversalFramework;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		D018278D1E43FD03005D9CCB /* AzureEasyAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AzureEasyAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0A3F85E1E536B0E0033C7AB /* libAzureEasyAuth.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAzureEasyAuth.a; path = "../../../../../Library/Developer/Xcode/DerivedData/AzureEasyAuth-bdmictkngjqixeepoqkpjcukmvjz/Build/Products/Debug-iphonesimulator/libAzureEasyAuth.a"; sourceTree = "<group>"; };
 		D0BC1CE11E43B26D00AB6E98 /* AzureEasyAuthDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AzureEasyAuthDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0BC1CE51E43B26D00AB6E98 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D0BC1CE71E43B26D00AB6E98 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -29,7 +51,7 @@
 		D0BC1CF01E43B26D00AB6E98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0BC1CF31E43B26D00AB6E98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0BC1CF51E43B26D00AB6E98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D0C355941E536B6B002390E7 /* AzureEasyAuthDynamicFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AzureEasyAuthDynamicFramework.framework; path = "../src/build/Debug-iphoneos/AzureEasyAuthDynamicFramework.framework"; sourceTree = "<group>"; };
+		D0FB09101E5508C7006438B6 /* AzureEasyAuth.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AzureEasyAuth.xcodeproj; path = ../src/AzureEasyAuth.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0C355981E536BB9002390E7 /* libAzureEasyAuth.a in Frameworks */,
+				D0FB091C1E55095A006438B6 /* libAzureEasyAuth.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,8 +69,6 @@
 		D018274D1E43C079005D9CCB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D0C355941E536B6B002390E7 /* AzureEasyAuthDynamicFramework.framework */,
-				D0A3F85E1E536B0E0033C7AB /* libAzureEasyAuth.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -56,7 +76,7 @@
 		D0BC1CD81E43B26D00AB6E98 = {
 			isa = PBXGroup;
 			children = (
-				D018278D1E43FD03005D9CCB /* AzureEasyAuth.framework */,
+				D0FB09101E5508C7006438B6 /* AzureEasyAuth.xcodeproj */,
 				D0BC1CE31E43B26D00AB6E98 /* AzureEasyAuthDemo */,
 				D0BC1CE21E43B26D00AB6E98 /* Products */,
 				D018274D1E43C079005D9CCB /* Frameworks */,
@@ -95,6 +115,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D0FB09111E5508C7006438B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0FB09171E5508C7006438B6 /* AzureEasyAuthDynamicFramework.framework */,
+				D0FB09191E5508C7006438B6 /* libAzureEasyAuth.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,6 +138,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				D0FB091B1E55094C006438B6 /* PBXTargetDependency */,
 			);
 			name = AzureEasyAuthDemo;
 			productName = AzureEasyAuthDemo;
@@ -141,12 +171,35 @@
 			mainGroup = D0BC1CD81E43B26D00AB6E98;
 			productRefGroup = D0BC1CE21E43B26D00AB6E98 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D0FB09111E5508C7006438B6 /* Products */;
+					ProjectRef = D0FB09101E5508C7006438B6 /* AzureEasyAuth.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				D0BC1CE01E43B26D00AB6E98 /* AzureEasyAuthDemo */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D0FB09171E5508C7006438B6 /* AzureEasyAuthDynamicFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AzureEasyAuthDynamicFramework.framework;
+			remoteRef = D0FB09161E5508C7006438B6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D0FB09191E5508C7006438B6 /* libAzureEasyAuth.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAzureEasyAuth.a;
+			remoteRef = D0FB09181E5508C7006438B6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D0BC1CDF1E43B26D00AB6E98 /* Resources */ = {
@@ -173,6 +226,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D0FB091B1E55094C006438B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AzureEasyAuthUniversalFramework;
+			targetProxy = D0FB091A1E55094C006438B6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D0BC1CED1E43B26D00AB6E98 /* Main.storyboard */ = {
