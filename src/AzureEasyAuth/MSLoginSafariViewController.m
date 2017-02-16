@@ -193,7 +193,6 @@
                     MSUser *user = [[MSLoginSerializer loginSerializer] userFromData:data orError:&responseError];
                     
                     if (user && !responseError) {
-                        //self.client.currentUser = user; FIXME
                         completion(user, responseError);
                     }
                 }
@@ -220,7 +219,7 @@
     
     // Create the connection and start it
     MSClientConnection *connection = [[MSClientConnection alloc] initWithRequest:request
-                                                              client:nil //self.client // FIXME
+                                                              client:nil
                                                               completion:responseCompletion];
     [connection start];
 }

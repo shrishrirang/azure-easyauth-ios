@@ -49,13 +49,8 @@ static NSString *const sdkFileVesionFormat = @"%d.%d.%d";
 	OS = @"OSX";
 	model = @"Mac";
 #endif
-    NSString *sdkVersion = @"FIXME"; //[NSString stringWithFormat:sdkVersionFormat,
-                                // MicrosoftAzureMobileSdkMajorVersion,
-                                // MicrosoftAzureMobileSdkMinorVersion];
-    NSString *fileVersion = @"FIXME"; //[NSString stringWithFormat:sdkFileVesionFormat,
-                                // MicrosoftAzureMobileSdkMajorVersion,
-                                // MicrosoftAzureMobileSdkMinorVersion,
-                                // MicrosoftAzureMobileSdkBuildVersion ];
+    NSString *sdkVersion = @"TODO: SDK VERSION";
+    NSString *fileVersion = @"TODO: FILE VERSION";
     
     // Build the user agent string
     NSString *userAgent = [NSString stringWithFormat:userAgentValueFormat,

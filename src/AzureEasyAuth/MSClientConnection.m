@@ -83,8 +83,8 @@ static NSOperationQueue *delegateQueue;
 
 -(void) start
 {
-    [MSClientConnection invokeNextFilter:nil // FIXME
-                              withClient:nil // FIXME
+    [MSClientConnection invokeNextFilter:nil
+                              withClient:nil
                              withRequest:self.request
                               completion:self.completion];
 }
@@ -92,7 +92,7 @@ static NSOperationQueue *delegateQueue;
 -(void) startWithoutFilters
 {
     [MSClientConnection invokeNextFilter:nil
-                              withClient:nil // FIXME
+                              withClient:nil
                              withRequest:self.request
                               completion:self.completion];
 }
@@ -287,9 +287,10 @@ static NSOperationQueue *delegateQueue;
     }
 }
 
-// FIXME - method needed? also, review implementation
 -(void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task willPerformHTTPRedirection:(NSHTTPURLResponse *)response newRequest:(NSURLRequest *)request completionHandler:(void (^)(NSURLRequest *))completionHandler
 {
+// TODO: Implement redirection check when required. For now, always fail redirections.
+    
 //    NSURLRequest *newRequest = nil;
 //    
 //    // Only follow redirects to the Microsoft Azure Mobile Service and not
@@ -301,7 +302,7 @@ static NSOperationQueue *delegateQueue;
 //        newRequest = request;
 //    }
     
-    completionHandler(request);
+    completionHandler(nil);
 }
 
 -(void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didCompleteWithError:(NSError *)error
@@ -314,7 +315,7 @@ static NSOperationQueue *delegateQueue;
 
 -(void) cleanup
 {
-//    self.client = nil; FIXME
+    self.client = nil;
     self.data = nil;
     self.completion = nil;
 }
